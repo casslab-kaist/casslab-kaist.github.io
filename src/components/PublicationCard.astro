@@ -1,0 +1,30 @@
+---
+import { ExternalLink } from "@lucide/astro";
+import type { Publication } from "../data/publications";
+
+interface Props {
+  publication: Publication;
+}
+
+const { publication } = Astro.props;
+const languageTone = publication.language.toLowerCase().includes("korean") ? "korean" : "english";
+---
+
+<article class="publication-card">
+  <div class="publication-card__meta">
+    <span class="type-tag">{publication.type}</span>
+    <span class:list={["language-badge", `language-badge--${languageTone}`]}>{publication.language}</span>
+  </div>
+  <h3>{publication.title}</h3>
+  <div class="publication-card__details">
+    {publication.details.map((detail) => <p>{detail}</p>)}
+  </div>
+  {
+    publication.linkLabel && (
+      <span class="publication-action" aria-label={`${publication.linkLabel}: ${publication.title}`}>
+        {publication.linkLabel}
+        <ExternalLink aria-hidden="true" size={14} strokeWidth={1.8} />
+      </span>
+    )
+  }
+</article>

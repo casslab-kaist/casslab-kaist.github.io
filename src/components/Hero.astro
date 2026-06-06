@@ -1,0 +1,17 @@
+---
+interface Props {
+  title: string;
+  image: string;
+  eyebrow?: string;
+}
+
+const { title, image, eyebrow } = Astro.props;
+---
+
+<section class="hero" aria-labelledby="page-title">
+  <div class="hero__image" style={`--hero-image: url("${image}")`} aria-hidden="true"></div>
+  <div class="hero__inner">
+    {eyebrow && <p class="hero__eyebrow">{eyebrow}</p>}
+    <h1 id="page-title">{title}</h1>
+  </div>
+</section>

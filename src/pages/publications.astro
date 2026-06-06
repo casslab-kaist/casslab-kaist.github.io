@@ -1,0 +1,63 @@
+---
+import { ArrowUp } from "@lucide/astro";
+import Hero from "../components/Hero.astro";
+import PublicationsSection from "../components/PublicationsSection.astro";
+import SidebarNav from "../components/SidebarNav.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import Layout from "../layouts/Layout.astro";
+import { publicationSections, totalPublicationCount } from "../data/publications";
+import { assets } from "../data/site";
+---
+
+<Layout
+  title="Publications | CASS Lab"
+  description="Books, articles, translations, reviews, and public essays from Chinese and Asian Science Studies Lab at KAIST."
+>
+  <SiteHeader activePath="/publications/" />
+  <Hero title="Publications" image={assets.publicationsHero} />
+  <main class="page-main" id="content">
+    <div class="content-shell" id="publications">
+      <SidebarNav sections={publicationSections} />
+      <div class="publications-content" aria-label="Publication list">
+        <div class="publication-summary">
+          <span>{totalPublicationCount} works</span>
+        </div>
+        {publicationSections.map((section) => <PublicationsSection section={section} />)}
+      </div>
+    </div>
+    <a class="top-button" href="#top" data-top-button aria-label="Back to top">
+      <ArrowUp aria-hidden="true" size={18} strokeWidth={2} />
+      <span>Top</span>
+    </a>
+  </main>
+  <SiteFooter />
+  <script define:vars={{ sectionIds: publicationSections.map((section) => section.id) }}>
+    const links = new Map(
+      sectionIds.map((id) => [id, document.querySelector(`[data-category-link="${id}"]`)]),
+    );
+    const setActiveLink = (id) => {
+      links.forEach((link, linkId) => {
+        link?.classList.toggle("is-active", linkId === id);
+      });
+    };
+
+    const topButton = document.querySelector("[data-top-button]");
+    const updateTopButton = () => {
+      topButton?.classList.toggle("is-visible", window.scrollY > 520);
+    };
+    const updateActiveCategory = () => {
+      const offset = window.scrollY + 180;
+      let currentId = sectionIds[0];
+      sectionIds.forEach((id) => {
+        const section = document.getElementById(id);
+        if (section && section.offsetTop <= offset) currentId = id;
+      });
+      setActiveLink(currentId);
+      updateTopButton();
+    };
+    updateActiveCategory();
+    window.addEventListener("scroll", updateActiveCategory, { passive: true });
+    window.addEventListener("hashchange", () => window.setTimeout(updateActiveCategory, 80));
+  </script>
+</Layout>

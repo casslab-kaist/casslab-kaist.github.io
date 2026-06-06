@@ -1,0 +1,95 @@
+---
+import { ChevronDown } from "@lucide/astro";
+import Hero from "../components/Hero.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import Layout from "../layouts/Layout.astro";
+import { assets, faqItems, fieldsAndRegions, studyAreas } from "../data/site";
+---
+
+<Layout
+  title="About | CASS Lab"
+  description="About the Chinese and Asian Science Studies Lab at KAIST STP."
+>
+  <SiteHeader activePath="/about/" />
+  <Hero title="About" image={assets.aboutHero} />
+  <main id="content">
+    <section class="page-section page-section--flush" aria-labelledby="about-lab-heading">
+      <div class="section-shell split-section">
+        <div>
+          <p class="section-kicker">CASS Lab</p>
+          <h2 id="about-lab-heading">What We Study</h2>
+        </div>
+        <div class="card-grid card-grid--two">
+          {studyAreas.map((area) => (
+            <article class="info-card">
+              <h3>{area.title}</h3>
+              <p>{area.description}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section page-section--warm" aria-labelledby="fields-heading">
+      <div class="section-shell">
+        <div class="section-heading">
+          <h2 id="fields-heading">Fields and Regions</h2>
+        </div>
+        <div class="field-region-grid">
+          <article class="list-panel">
+            <h3>Primary Fields</h3>
+            <ul>
+              {fieldsAndRegions.fields.map((item) => <li>{item}</li>)}
+            </ul>
+          </article>
+          <article class="list-panel">
+            <h3>Regions of Focus</h3>
+            <ul>
+              {fieldsAndRegions.regions.map((item) => <li>{item}</li>)}
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section" aria-labelledby="joining-heading">
+      <div class="section-shell split-section">
+        <div>
+          <p class="section-kicker">Prospective Students</p>
+          <h2 id="joining-heading">Joining the Lab</h2>
+        </div>
+        <div class="rich-copy">
+          <p>
+            CASS Lab welcomes prospective Master's, Ph.D., and integrated M.S.-Ph.D. students interested in history of
+            science, STS, science and technology policy, Asian studies, animal studies, environmental studies, and
+            qualitative research.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section page-section--warm" aria-labelledby="faq-heading">
+      <div class="section-shell">
+        <div class="section-heading">
+          <h2 id="faq-heading">FAQ</h2>
+        </div>
+        <div class="faq-list" aria-label="Frequently asked questions">
+          {faqItems.map((question) => (
+            <details class="faq-item">
+              <summary>
+                <span>{question}</span>
+                <ChevronDown aria-hidden="true" size={20} strokeWidth={1.8} />
+              </summary>
+              <p>
+                Placeholder answer. This section will be updated with detailed guidance for prospective students and
+                visitors.
+              </p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</Layout>

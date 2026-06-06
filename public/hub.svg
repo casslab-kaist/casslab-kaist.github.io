@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hub-icon lucide-hub">
+  <path d="m12 10.36 0-4.5"/>
+  <path d="m18.66 10.7-4.28 1.39"/>
+  <path d="m16.12 18.52-2.65-3.64"/>
+  <path d="m10.53 14.88-2.65 3.64"/>
+  <path d="m9.62 12.09-4.28-1.39"/>
+  <circle cx="12" cy="12.86" r="2.5"/>
+  <circle cx="20.56" cy="10.08" r="2"/>
+  <circle cx="17.29" cy="20.14" r="2"/>
+  <circle cx="6.71" cy="20.14" r="2"/>
+  <circle cx="3.44" cy="10.08" r="2"/>
+  <circle cx="12" cy="3.86" r="2"/>
+</svg>

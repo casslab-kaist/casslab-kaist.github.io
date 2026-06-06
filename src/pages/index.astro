@@ -1,0 +1,53 @@
+---
+import SiteFooter from "../components/SiteFooter.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import Layout from "../layouts/Layout.astro";
+import { assets, labIntro, piProfile } from "../data/site";
+---
+
+<Layout
+  title="CASS Lab | KAIST"
+  description="Chinese and Asian Science Studies Lab at KAIST STP studies science, technology, medicine, animals, and environments through the histories and societies of Asia."
+>
+  <SiteHeader activePath="/" />
+  <main id="content">
+    <section class="home-hero" aria-labelledby="home-title">
+      <div class="home-hero__copy">
+        <h1 id="home-title">Welcome to Chinese and Asian Science Studies Lab</h1>
+        <p>Understanding science and technology through the histories, cultures, and worlds of Asia.</p>
+      </div>
+      <figure class="home-hero__media">
+        <img src={assets.homeHero} alt="Ink-style mountains and moon used in the CASS Lab design system" width="1254" height="1254" />
+      </figure>
+    </section>
+
+    <section class="page-section home-about-section" aria-labelledby="about-home-heading">
+      <div class="section-shell split-section">
+        <div>
+          <p class="section-kicker">About</p>
+          <h2 id="about-home-heading">About the Lab</h2>
+        </div>
+        <div class="rich-copy text-panel">
+          {labIntro.map((paragraph) => <p>{paragraph}</p>)}
+          <a class="text-link" href="/about/">Read more about the Lab</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section page-section--warm" aria-labelledby="pi-home-heading">
+      <div class="section-shell home-pi">
+        <figure class="home-pi__portrait">
+          <img src={assets.piPortrait} alt="Portrait of Jongsik Christian Yi" width="341" height="512" />
+        </figure>
+        <div class="rich-copy">
+          <p class="section-kicker">Director, CASS Lab</p>
+          <h2 id="pi-home-heading">Principal Investigator</h2>
+          <h3>{piProfile.name}</h3>
+          {piProfile.bio.map((paragraph) => <p>{paragraph}</p>)}
+          <a class="text-link" href="/pi/">View Full Profile</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</Layout>

@@ -1,0 +1,46 @@
+---
+import { ExternalLink, MapPin } from "@lucide/astro";
+import { assets, navItems } from "../data/site";
+
+const footerLinks = navItems.filter((item) => item.label !== "Home");
+---
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <a class="footer-brand" href="/" aria-label="CASS Lab home">
+        <img src={assets.logo} alt="" width="44" height="44" />
+        <span>CASS Lab</span>
+      </a>
+      <p>
+        Chinese and Asian Science Studies Lab studies science, technology, medicine, animals, and environments through
+        the histories and societies of Asia.
+      </p>
+    </div>
+
+    <div class="site-footer__section">
+      <h2>Explore</h2>
+      <nav class="site-footer__nav" aria-label="Footer navigation">
+        {footerLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+      </nav>
+    </div>
+
+    <div class="site-footer__section">
+      <h2>Affiliation</h2>
+      <p class="footer-affiliation">
+        <MapPin aria-hidden="true" size={17} strokeWidth={1.8} />
+        KAIST Graduate School of Science and Technology Policy
+      </p>
+      <a class="footer-external" href="https://stp.kaist.ac.kr" target="_blank" rel="noreferrer">
+        KAIST STP
+        <ExternalLink aria-hidden="true" size={14} strokeWidth={1.8} />
+      </a>
+    </div>
+
+    <div class="site-footer__bottom">
+      <p class="site-footer__copyright">
+        © Chinese and Asian Science Studies Lab (CASS Lab), KAIST. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>

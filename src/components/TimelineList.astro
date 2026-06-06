@@ -1,0 +1,26 @@
+---
+interface TimelineItem {
+  date: string;
+  title: string;
+  detail: string;
+}
+
+interface Props {
+  items: TimelineItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<div class="timeline-list">
+  {
+    items.map((item, index) => (
+      <article class="timeline-item">
+        <span class:list={["timeline-dot", index === 0 && "is-current"]} aria-hidden="true"></span>
+        <p class="timeline-item__date">{item.date}</p>
+        <h3>{item.title}</h3>
+        <p>{item.detail}</p>
+      </article>
+    ))
+  }
+</div>

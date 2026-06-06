@@ -1,0 +1,44 @@
+---
+import Hero from "../components/Hero.astro";
+import PersonCard from "../components/PersonCard.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import Layout from "../layouts/Layout.astro";
+import { alumni, assets, currentMembers, researchAssistants } from "../data/site";
+---
+
+<Layout title="Members | CASS Lab" description="Current members, research assistants, and alumni of CASS Lab.">
+  <SiteHeader activePath="/members/" />
+  <Hero title="Members" image={assets.membersHero} />
+  <main class="page-main page-main--warm" id="content">
+    <div class="section-shell member-sections">
+      <section aria-labelledby="current-members-heading">
+        <div class="section-heading">
+          <h2 id="current-members-heading">Current Members</h2>
+        </div>
+        <div class="people-grid people-grid--members">
+          {currentMembers.map((member) => <PersonCard {...member} withPortraitPlaceholder />)}
+        </div>
+      </section>
+
+      <section aria-labelledby="research-assistants-heading">
+        <div class="section-heading">
+          <h2 id="research-assistants-heading">Research Assistants</h2>
+        </div>
+        <div class="people-grid people-grid--assistants">
+          {researchAssistants.map((member) => <PersonCard {...member} />)}
+        </div>
+      </section>
+
+      <section aria-labelledby="alumni-heading">
+        <div class="section-heading">
+          <h2 id="alumni-heading">Alumni</h2>
+        </div>
+        <div class="people-grid people-grid--alumni">
+          {alumni.map((member) => <PersonCard name={member.name} degree={member.degree} current={member.current} />)}
+        </div>
+      </section>
+    </div>
+  </main>
+  <SiteFooter />
+</Layout>

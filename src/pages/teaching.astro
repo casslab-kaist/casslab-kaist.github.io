@@ -1,0 +1,36 @@
+---
+import CourseCard from "../components/CourseCard.astro";
+import Hero from "../components/Hero.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import Layout from "../layouts/Layout.astro";
+import { assets, teachingAreas, teachingRecords } from "../data/site";
+---
+
+<Layout title="Teaching | CASS Lab" description="Courses and teaching areas for CASS Lab.">
+  <SiteHeader activePath="/teaching/" />
+  <Hero title="Courses" image={assets.teachingHero} />
+  <main class="page-main page-main--warm" id="content">
+    <div class="section-shell teaching-layout">
+      <div class="teaching-records">
+        {teachingRecords.map((group) => (
+          <section class="course-group" aria-labelledby={`${group.institution.toLowerCase().replaceAll(" ", "-")}-heading`}>
+            <div class="section-heading">
+              <h2 id={`${group.institution.toLowerCase().replaceAll(" ", "-")}-heading`}>{group.institution}</h2>
+            </div>
+            <div class="course-list">
+              {group.courses.map((course) => <CourseCard title={course.title} offerings={course.offerings} />)}
+            </div>
+          </section>
+        ))}
+      </div>
+      <aside class="teaching-sidebar" aria-labelledby="teaching-areas-heading">
+        <h2 id="teaching-areas-heading">Teaching Areas</h2>
+        <div class="keyword-grid">
+          {teachingAreas.map((area) => <span>{area}</span>)}
+        </div>
+      </aside>
+    </div>
+  </main>
+  <SiteFooter />
+</Layout>

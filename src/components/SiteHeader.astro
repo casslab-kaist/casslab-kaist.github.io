@@ -1,0 +1,30 @@
+---
+import { assets, navItems } from "../data/site";
+
+interface Props {
+  activePath?: string;
+}
+
+const { activePath = "/" } = Astro.props;
+---
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="/" aria-label="CASS Lab home">
+      <img class="brand-mark" src={assets.logo} alt="" width="48" height="48" />
+      <span class="brand-name">CASS Lab</span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary navigation">
+      {
+        navItems.map((item) => {
+          const isActive = item.href === activePath;
+          return (
+          <a class:list={["nav-link", isActive && "is-active"]} href={item.href} aria-current={isActive ? "page" : undefined}>
+            {item.label}
+          </a>
+          );
+        })
+      }
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,126 @@
+---
+import { Building2, ExternalLink, IdCard, Mail } from "@lucide/astro";
+import TimelineList from "../components/TimelineList.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import Layout from "../layouts/Layout.astro";
+import {
+  advisingText,
+  appointments,
+  assets,
+  awards,
+  education,
+  galleryImages,
+  piProfile,
+  researchInterests,
+} from "../data/site";
+
+const profileLinks = [
+  { label: "Email", icon: Mail },
+  { label: "KAIST Profile", icon: Building2 },
+  { label: "Harvard Profile", icon: ExternalLink },
+  { label: "ORCID", icon: IdCard },
+];
+---
+
+<Layout title="Jongsik Christian Yi | CASS Lab" description="Principal Investigator profile for CASS Lab at KAIST STP.">
+  <SiteHeader activePath="/pi/" />
+  <main id="content">
+    <section class="profile-hero" aria-labelledby="pi-title">
+      <figure class="profile-hero__portrait">
+        <img src={assets.piPortrait} alt="Portrait of Jongsik Christian Yi" width="341" height="512" />
+      </figure>
+      <div class="profile-hero__copy">
+        <h1 id="pi-title">{piProfile.name}</h1>
+        <p class="profile-hero__title">{piProfile.title}</p>
+        <p class="profile-hero__appointment">{piProfile.appointment}</p>
+        <div class="rich-copy">
+          {piProfile.bio.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+        <div class="profile-links" aria-label="Profile links">
+          {profileLinks.map((link) => {
+            const Icon = link.icon;
+            return (
+              <a href="#" class="profile-link">
+                <Icon aria-hidden="true" size={16} strokeWidth={1.8} />
+                <span>{link.label}</span>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section page-section--warm" aria-labelledby="appointments-heading">
+      <div class="section-shell">
+        <div class="section-heading">
+          <h2 id="appointments-heading">Academic Appointments</h2>
+        </div>
+        <TimelineList items={appointments} />
+      </div>
+    </section>
+
+    <section class="page-section" aria-labelledby="education-heading">
+      <div class="section-shell">
+        <div class="section-heading">
+          <h2 id="education-heading">Education</h2>
+        </div>
+        <TimelineList items={education} />
+      </div>
+    </section>
+
+    <section class="page-section page-section--warm" aria-labelledby="interests-heading">
+      <div class="section-shell two-column-section">
+        <article>
+          <div class="section-heading">
+            <h2 id="interests-heading">Research Interests</h2>
+          </div>
+          <div class="pill-list">
+            {researchInterests.map((interest) => <span>{interest}</span>)}
+          </div>
+        </article>
+        <article class="rich-copy">
+          <div class="section-heading">
+            <h2>Teaching &amp; Advising</h2>
+          </div>
+          <p>{advisingText}</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="page-section" aria-labelledby="awards-heading">
+      <div class="section-shell">
+        <div class="section-heading">
+          <h2 id="awards-heading">Awards, Fellowships, and Grants (Selected)</h2>
+        </div>
+        <div class="award-list">
+          {awards.map(([title, organization, year]) => (
+            <article class="award-item">
+              <div>
+                <h3>{title}</h3>
+                <p>{organization}</p>
+              </div>
+              <span>{year}</span>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section page-section--warm" aria-labelledby="gallery-heading">
+      <div class="section-shell">
+        <div class="section-heading">
+          <h2 id="gallery-heading">Gallery</h2>
+        </div>
+        <div class="gallery-grid">
+          {galleryImages.map((image) => (
+            <figure>
+              <img src={image.src} alt={image.alt} />
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</Layout>

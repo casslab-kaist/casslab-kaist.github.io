@@ -1,0 +1,17 @@
+---
+import PublicationCard from "./PublicationCard.astro";
+import type { PublicationSection } from "../data/publications";
+
+interface Props {
+  section: PublicationSection;
+}
+
+const { section } = Astro.props;
+---
+
+<section class="publication-section" id={section.id} aria-labelledby={`${section.id}-heading`}>
+  <h2 id={`${section.id}-heading`}>{section.title}</h2>
+  <div class="publication-list">
+    {section.items.map((publication) => <PublicationCard publication={publication} />)}
+  </div>
+</section>

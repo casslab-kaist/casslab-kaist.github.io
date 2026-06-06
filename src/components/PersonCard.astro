@@ -1,0 +1,30 @@
+---
+import { UserRound } from "@lucide/astro";
+
+interface Props {
+  name: string;
+  role?: string;
+  affiliation?: string;
+  degree?: string;
+  current?: string;
+  withPortraitPlaceholder?: boolean;
+}
+
+const { name, role, affiliation, degree, current, withPortraitPlaceholder = false } = Astro.props;
+---
+
+<article class="person-card">
+  {
+    withPortraitPlaceholder && (
+      <div class="person-card__photo" aria-hidden="true">
+        <UserRound size={32} strokeWidth={1.7} />
+      </div>
+    )
+  }
+  <div class="person-card__body">
+    <h3>{name}</h3>
+    {role && <p class="person-card__role">{role}{affiliation && <span> @ {affiliation}</span>}</p>}
+    {degree && <p class="person-card__degree">{degree}</p>}
+    {current && <p class="person-card__current">Current: {current}</p>}
+  </div>
+</article>

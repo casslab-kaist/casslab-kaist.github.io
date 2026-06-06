@@ -1,0 +1,33 @@
+---
+interface Offering {
+  term: string;
+  role: string;
+  evaluation?: string;
+  award?: string;
+}
+
+interface Props {
+  title: string;
+  offerings: Offering[];
+}
+
+const { title, offerings } = Astro.props;
+---
+
+<article class="course-card">
+  <h3>{title}</h3>
+  <div class="course-card__offerings">
+    {
+      offerings.map((offering) => (
+        <div class="course-offering">
+          <div>
+            <p class="course-offering__term">{offering.term}</p>
+            <p class="course-offering__role">{offering.role}</p>
+          </div>
+          {offering.evaluation && <span class="course-badge">Evaluation: {offering.evaluation}</span>}
+          {offering.award && <p class="course-award">{offering.award}</p>}
+        </div>
+      ))
+    }
+  </div>
+</article>
