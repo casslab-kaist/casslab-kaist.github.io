@@ -507,7 +507,7 @@ button:focus-visible,
 }
 
 .research-map {
-  height: 680px;
+  height: 800px;
   margin: 0 auto;
   max-width: 860px;
   position: relative;
@@ -520,11 +520,13 @@ button:focus-visible,
   display: grid;
   gap: 0.55rem;
   min-height: 164px;
+  height: 240px;
+  box-sizing: border-box;
   padding: 1.35rem;
   position: absolute;
   text-align: center;
   transform: translate(-50%, -50%);
-  width: 220px;
+  width: 300px;
 }
 
 .theme-card__icon,
@@ -542,32 +544,37 @@ button:focus-visible,
 
 .theme-card--1 {
   background: #f1e9f4;
-  left: calc(50% + 76px);
-  top: calc(50% - 247px);
+  left: 50%;
+  top: calc(50% - 280px);
 }
 
 .theme-card--2 {
   background: #e8f0e8;
-  left: calc(50% - 210px);
-  top: calc(50% - 153px);
+  left: calc(50% - 334px);
+  top: calc(50% - 79px);
 }
 
 .theme-card--3 {
   background: #eef2f8;
-  left: calc(50% + 260px);
-  top: 50%;
+  left: calc(50% + 334px);
+  top: calc(50% - 79px);
 }
 
 .theme-card--4 {
   background: #f7ece4;
-  left: calc(50% - 210px);
-  top: calc(50% + 153px);
+  left: calc(50% - 188px);
+  top: calc(50% + 259px);
 }
 
 .theme-card--5 {
   background: #e7f2f1;
-  left: calc(50% + 76px);
-  top: calc(50% + 247px);
+  left: calc(50% + 188px);
+  top: calc(50% + 259px);
+}
+
+.theme-card h3,
+.theme-card p {
+  white-space: pre-line; /* Tells the browser to render \n as a real line break */
 }
 
 .theme-card--core {
@@ -577,7 +584,7 @@ button:focus-visible,
   left: 50%;
   min-height: 188px;
   top: 50%;
-  width: 250px;
+  width: 300px;
 }
 
 .theme-card--core h3,

@@ -73,15 +73,15 @@ export const faqItems = [
 export const researchThemes = [
   {
     title: "Post/decolonial STS",
-    keywords: "extraction, exploitation, violence, labor",
+    keywords: "extraction, exploitation,\nviolence, labor",
   },
   {
     title: "University Policies",
-    keywords: "research universities, STEM higher education, intellectualism",
+    keywords: "research universities,\nSTEM higher education,\nintellectualism",
   },
   {
     title: "Veterinary Humanities",
-    keywords: "animal studies, zoonotic diseases, agrarian studies, One Health",
+    keywords: "animal studies, zoonotic diseases, agrarian studies,\nOne Health",
   },
   {
     title: "Democratic Technology Studies",
