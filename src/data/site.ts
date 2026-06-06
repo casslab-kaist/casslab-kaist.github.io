@@ -128,11 +128,11 @@ export const researchAreas = [
 
 export const currentProjects = [
   {
-    title: "Mapping the Subterranean: Mining Engineering and State Power in Republican China",
-    fundingAgency: "National Research Foundation (NRF)",
-    duration: "2023 - 2026",
+    title: "China–Korea Science and Technology Cooperation and Research Security",
+    fundingAgency: "Ministry of Science and ICT, Republic of Korea",
+    duration: "2026 - 2028",
     description:
-      "This project investigates the professionalization of mining engineering in early 20th century China. It argues that geological surveys and extraction technologies were not merely scientific endeavors, but crucial instruments for territorial consolidation and state-building amidst warlord fragmentation.",
+      "This project examines research security issues emerging from science and technology cooperation between Korea, China, and other Asian countries. Through case studies, interviews, and policy analysis, it explores how collaboration in fields such as AI, biotechnology, semiconductors, materials, energy, and basic science creates both opportunities and risks, including technology transfer, data sharing, intellectual property concerns, and asymmetric partnerships. The project aims to develop an analytical framework and practical policy resources for building more responsible and secure international research collaborations.",
   },
 ];
 
