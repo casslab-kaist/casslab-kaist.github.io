@@ -4,6 +4,7 @@ export type Publication = {
   title: string;
   details: string[];
   linkLabel?: string;
+  url?: string;
 };
 
 export type PublicationSection = {
@@ -27,7 +28,7 @@ export const publicationSections: PublicationSection[] = [
         details: [
           "Jongsik Christian Yi. Under contract with the University of Chicago Press, 2022.",
         ],
-        linkLabel: "View Publisher Site",
+        // linkLabel: "View Publisher Site",
       },
       {
         type: "Book",
@@ -60,6 +61,7 @@ export const publicationSections: PublicationSection[] = [
           "Animal History: The Birth of the Modern People who Love and Hate Animals [벌거벗은 동물사: 동물을 사랑하고 혐오하는 현대인의 탄생]",
         details: ["Jongsik Christian Yi. East Asia Books, 2024."],
         linkLabel: "View Publisher Site",
+        url: "https://product.kyobobook.co.kr/detail/S000213544819",
       },
     ],
   },
@@ -76,7 +78,7 @@ export const publicationSections: PublicationSection[] = [
           "In Overlapping Borderlands, eds. Loretta Kim and Anran Wang.",
           "Jongsik Christian Yi (work in progress).",
         ],
-        linkLabel: "View Publisher Site",
+        // linkLabel: "View Publisher Site",
       },
       {
         type: "Book Chapter",
@@ -87,6 +89,7 @@ export const publicationSections: PublicationSection[] = [
           "Jongsik Christian Yi (forthcoming in December 2026).",
         ],
         linkLabel: "View Publisher Site",
+        url: "https://cup.columbia.edu/book/chinas-environmental-history/9780231219662/",
       },
       {
         type: "Book Chapter",
@@ -98,6 +101,7 @@ export const publicationSections: PublicationSection[] = [
           "Jongsik Christian Yi (forthcoming in July 2026).",
         ],
         linkLabel: "View Publisher Site",
+        url: "https://hkupress.hku.hk/Subject/history?product_id=1749&limit=20",
       },
       {
         type: "Book Chapter",
@@ -108,6 +112,7 @@ export const publicationSections: PublicationSection[] = [
           "Manyong Moon, Sang-ho Ro, Jongsik Christian Yi, et al. Sol Science, 2025.",
         ],
         linkLabel: "View Publisher Site",
+        url: "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=368905039",
       },
       {
         type: "Book Chapter",
@@ -118,6 +123,7 @@ export const publicationSections: PublicationSection[] = [
           "Donghyuk Kim, Jongsik Christian Yi, et al. GIST Press, 2025.",
         ],
         linkLabel: "View Publisher Site",
+        url: "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=364880372&start=slayer",
       },
     ],
   },
@@ -135,6 +141,7 @@ export const publicationSections: PublicationSection[] = [
           "Jongsik Christian Yi. Journal of Asian Studies, Vol. 85, No. 2 (May 2026): 287–311.",
         ],
         linkLabel: "View Article",
+        // url: "https://read.dukeupress.edu/journal-of-asian-studies/article-abstract/85/2/287/407133/Maoist-PigsSwine-Communes-and-the-State-in-Rural",
       },
       {
         type: "Articles",
@@ -145,6 +152,7 @@ export const publicationSections: PublicationSection[] = [
           "Jongsik Christian Yi. Bulletin of the History of Medicine, Vol. 98, No. 2 (Summer 2024): 298–325.",
         ],
         linkLabel: "View Article",
+        // url: "https://muse.jhu.edu/pub/1/article/937507",
       },
       {
         type: "Articles",
@@ -155,6 +163,7 @@ export const publicationSections: PublicationSection[] = [
           "Jongsik Christian Yi. Historical Studies in the Natural Sciences, Vol. 54, No. 1 (February 2024): 121–124.",
         ],
         linkLabel: "View Article",
+        // url: "https://online.ucpress.edu/hsns/article-abstract/54/1/121/200191/Decolonization-and-Self-ReflectionTeaching-the",
       },
       {
         type: "Articles",
@@ -165,6 +174,7 @@ export const publicationSections: PublicationSection[] = [
           "Jongsik Christian Yi. Journal of the History of Biology, Vol. 54, No. 3 (September 2021): 513–539.",
         ],
         linkLabel: "View Article",
+        // url: "https://link.springer.com/article/10.1007/s10739-021-09652-7",
       },
       {
         type: "Articles",
@@ -174,6 +184,7 @@ export const publicationSections: PublicationSection[] = [
           "Jongsik Christian Yi. Bulletin of the Pacific Circle, No. 43 (October 2019).",
         ],
         linkLabel: "View Article",
+        // url: "https://thepacificcircle.com/wp-content/uploads/Bulletin-of-the-Pacific-Circle-43-October-2019.pdf",
       },
       {
         type: "Articles",
@@ -184,6 +195,7 @@ export const publicationSections: PublicationSection[] = [
           "Jongsik Christian Yi. Yoksa Hakbo: The Korean Historical Review, 265 (March 2025): 505–540.",
         ],
         linkLabel: "View Article",
+        // url: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003192340",
       },
       {
         type: "Articles",
@@ -194,6 +206,7 @@ export const publicationSections: PublicationSection[] = [
           "Jongsik Christian Yi. Korean Journal for the History of Science, Vol. 46, No. 1 (April 2024): 203–233.",
         ],
         linkLabel: "View Article",
+        // url: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003076772",
       },
       {
         type: "Articles",
@@ -204,6 +217,7 @@ export const publicationSections: PublicationSection[] = [
           "Jongsik Christian Yi. Critical Review of History, Vol. 145 (November 2023): 209–236.",
         ],
         linkLabel: "View Article",
+        // url: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003021872",
       },
       {
         type: "Articles",
@@ -214,6 +228,7 @@ export const publicationSections: PublicationSection[] = [
           "Jongsik Christian Yi. Journal of Asiatic Studies, Vol. 64, No. 2 (June 2021): 41–87.",
         ],
         linkLabel: "View Article",
+        // url: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002731371",
       },
       {
         type: "Articles",
@@ -224,6 +239,7 @@ export const publicationSections: PublicationSection[] = [
           "Jongsik Christian Yi. Korean Journal for the History of Science, Vol. 43, No. 1 (April 2021): 143–174.",
         ],
         linkLabel: "View Article",
+        // url: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002712190",
       },
     ],
   },
@@ -268,6 +284,7 @@ export const publicationSections: PublicationSection[] = [
           "Translated by: Taebok Roh, edited and introduced by Jongsik Christian Yi. Red Salt Books, 2026.",
         ],
         linkLabel: "View Publisher Site",
+        url: "https://aladin.co.kr/shop/wproduct.aspx?ItemId=391000730&start=pcsearch_auto",
       },
       {
         type: "Translation",
@@ -278,6 +295,7 @@ export const publicationSections: PublicationSection[] = [
           "Translated by: Hyunjeong Lim, edited and introduced by Jongsik Christian Yi. Red Salt Books, 2026.",
         ],
         linkLabel: "View Publisher Site",
+        url: "https://product.kyobobook.co.kr/detail/S000219333248",
       },
       {
         type: "Translation",
@@ -288,6 +306,7 @@ export const publicationSections: PublicationSection[] = [
           "Selected and translated by: Jongsik Christian Yi. Eum, 2025.",
         ],
         linkLabel: "View Publisher Site",
+        url: "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=368677887",
       },
       {
         type: "Translation",
@@ -298,6 +317,7 @@ export const publicationSections: PublicationSection[] = [
           "Translated by: Jongsik Christian Yi and Jiho Moon. Purunyoksa Publishing Co., 2025.",
         ],
         linkLabel: "View Publisher Site",
+        url: "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=338274204",
       },
       {
         type: "Translation",
@@ -308,6 +328,7 @@ export const publicationSections: PublicationSection[] = [
           "Translated by: Jongsik Christian Yi. Red Salt Books, 2024.",
         ],
         linkLabel: "View Publisher Site",
+        url: "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=338274204",
       },
       {
         type: "Translation",
@@ -318,6 +339,7 @@ export const publicationSections: PublicationSection[] = [
           "Translated by: Jongsik Christian Yi. East Asia Books, 2021.",
         ],
         linkLabel: "View Publisher Site",
+        url: "https://blog.naver.com/hanulnew/222536481338?",
       },
       {
         type: "Translation",
@@ -328,6 +350,7 @@ export const publicationSections: PublicationSection[] = [
           "Translated by: Young-jeon Shin, Jongsik Christian Yi, et al. Hanul, 2021.",
         ],
         linkLabel: "View Publisher Site",
+
       },
     ],
   },
