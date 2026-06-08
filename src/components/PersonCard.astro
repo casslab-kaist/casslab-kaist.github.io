@@ -1,5 +1,5 @@
 ---
-import { UserRound } from "@lucide/astro";
+import { Building2, UserRound } from "@lucide/astro";
 
 interface Props {
   name: string;
@@ -13,7 +13,7 @@ interface Props {
 const { name, role, affiliation, degree, current, withPortraitPlaceholder = false } = Astro.props;
 ---
 
-<article class="person-card">
+<article class:list={["person-card", withPortraitPlaceholder && "person-card--portrait"]}>
   {
     withPortraitPlaceholder && (
       <div class="person-card__photo" aria-hidden="true">
@@ -23,7 +23,19 @@ const { name, role, affiliation, degree, current, withPortraitPlaceholder = fals
   }
   <div class="person-card__body">
     <h3>{name}</h3>
-    {role && <p class="person-card__role">{role}{affiliation && <span> @ {affiliation}</span>}</p>}
+    {(role || affiliation) && (
+      <div class="person-card__meta">
+        {role && <p class="person-card__role">{role}</p>}
+        {
+          affiliation && (
+            <p class="person-card__affiliation">
+              <Building2 aria-hidden="true" size={15} strokeWidth={1.9} />
+              <span>{affiliation}</span>
+            </p>
+          )
+        }
+      </div>
+    )}
     {degree && <p class="person-card__degree">{degree}</p>}
     {current && <p class="person-card__current">Current: {current}</p>}
   </div>

@@ -4,7 +4,7 @@ import Hero from "../components/Hero.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import Layout from "../layouts/Layout.astro";
-import { assets, faqItems, fieldsAndRegions, studyAreas } from "../data/site";
+import { assets, assetSources, faqItems, fieldsAndRegions, studyAreas } from "../data/site";
 ---
 
 <Layout
@@ -12,7 +12,7 @@ import { assets, faqItems, fieldsAndRegions, studyAreas } from "../data/site";
   description="About the Chinese and Asian Science Studies Lab at KAIST STP."
 >
   <SiteHeader activePath="/about/" />
-  <Hero title="About" image={assets.aboutHero} />
+  <Hero title="About" image={assets.aboutHero} imageSource={assetSources.aboutHero} />
   <main id="content">
     <section class="page-section page-section--flush" aria-labelledby="about-lab-heading">
       <div class="section-shell split-section">
@@ -75,16 +75,13 @@ import { assets, faqItems, fieldsAndRegions, studyAreas } from "../data/site";
           <h2 id="faq-heading">FAQ</h2>
         </div>
         <div class="faq-list" aria-label="Frequently asked questions">
-          {faqItems.map((question) => (
+          {faqItems.map((item) => (
             <details class="faq-item">
               <summary>
-                <span>{question}</span>
+                <span>{item.question}</span>
                 <ChevronDown aria-hidden="true" size={20} strokeWidth={1.8} />
               </summary>
-              <p>
-                Placeholder answer. This section will be updated with detailed guidance for prospective students and
-                visitors.
-              </p>
+              <p>{item.answer}</p>
             </details>
           ))}
         </div>

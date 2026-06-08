@@ -7,16 +7,17 @@ interface TimelineItem {
 
 interface Props {
   items: TimelineItem[];
+  highlightFirst?: boolean;
 }
 
-const { items } = Astro.props;
+const { items, highlightFirst = false } = Astro.props;
 ---
 
 <div class="timeline-list">
   {
     items.map((item, index) => (
       <article class="timeline-item">
-        <span class:list={["timeline-dot", index === 0 && "is-current"]} aria-hidden="true"></span>
+        <span class:list={["timeline-dot", highlightFirst && index === 0 && "is-current"]} aria-hidden="true"></span>
         <p class="timeline-item__date">{item.date}</p>
         <h3>{item.title}</h3>
         <p>{item.detail}</p>

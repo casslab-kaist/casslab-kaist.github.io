@@ -15,7 +15,7 @@ import Hero from "../components/Hero.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import Layout from "../layouts/Layout.astro";
-import { assets, currentProjects, researchAreas, researchThemes } from "../data/site";
+import { assets, assetSources, currentProjects, researchAreas, researchThemes } from "../data/site";
 
 const themeIcons = [Scale, GraduationCap, PawPrint, Landmark, ShieldCheck];
 const areaIcons = [Building2, Landmark, Leaf, RadioTower, Network, Compass];
@@ -23,7 +23,7 @@ const areaIcons = [Building2, Landmark, Leaf, RadioTower, Network, Compass];
 
 <Layout title="Research | CASS Lab" description="Research themes, areas, and current projects at CASS Lab.">
   <SiteHeader activePath="/research/" />
-  <Hero title="Research" image={assets.researchHero} />
+  <Hero title="Research" image={assets.researchHero} imageSource={assetSources.researchHero} />
   <main id="content">
     <section class="page-section page-section" aria-labelledby="themes-heading">
       <div class="section-shell">
@@ -80,17 +80,20 @@ const areaIcons = [Building2, Landmark, Leaf, RadioTower, Network, Compass];
         </div>
         <div class="project-list">
           {currentProjects.map((project) => (
-            <article class="project-card">
-              <aside class="project-card__meta">
-                <p class="small-label">Funding Agency</p>
-                <p>{project.fundingAgency}</p>
-                <p class="small-label">Duration</p>
-                <p>{project.duration}</p>
-              </aside>
+            <article class="project-card project-card--summary">
               <div class="project-card__body">
                 <h3>{project.title}</h3>
-                <p>{project.description}</p>
               </div>
+              <dl class="project-card__facts">
+                <div>
+                  <dt>Funding Agency</dt>
+                  <dd>{project.fundingAgency}</dd>
+                </div>
+                <div>
+                  <dt>Duration</dt>
+                  <dd>{project.duration}</dd>
+                </div>
+              </dl>
             </article>
           ))}
         </div>

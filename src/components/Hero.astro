@@ -3,15 +3,48 @@ interface Props {
   title: string;
   image: string;
   eyebrow?: string;
+  imageSource?: string; // Kept!
 }
 
-const { title, image, eyebrow } = Astro.props;
+const { title, image, eyebrow, imageSource } = Astro.props;
 ---
 
 <section class="hero" aria-labelledby="page-title">
   <div class="hero__image" style={`--hero-image: url("${image}")`} aria-hidden="true"></div>
+  {imageSource && (
+    <span class="hero__source" aria-label={`Image credit: ${imageSource}`}>
+      {imageSource}
+    </span>
+  )}
   <div class="hero__inner">
     {eyebrow && <p class="hero__eyebrow">{eyebrow}</p>}
     <h1 id="page-title">{title}</h1>
   </div>
 </section>
+
+<script>
+  function initHeroParallax() {
+    const heroes = document.querySelectorAll('.hero');
+    
+    heroes.forEach((hero) => {
+      const img = hero.querySelector('.hero__image') as HTMLElement;
+      if (!img) return;
+
+      window.addEventListener('scroll', () => {
+        const rect = hero.getBoundingClientRect();
+        
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          // Change 0.35 to adjust speed (lower = slower moving image / deeper depth)
+          const speed = 0.35; 
+          const yPos = -rect.top * speed;
+          
+          img.style.transform = `translate3d(0, ${yPos}px, 0)`;
+        }
+      }, { passive: true });
+    });
+  }
+
+  initHeroParallax();
+  
+  document.addEventListener('astro:after-swap', initHeroParallax);
+</script>

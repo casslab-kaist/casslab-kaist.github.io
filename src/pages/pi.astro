@@ -1,25 +1,29 @@
 ---
-import { Building2, ExternalLink, IdCard, Mail } from "@lucide/astro";
+import { Building2, GraduationCap, IdCard, Mail } from "@lucide/astro";
+import CourseCard from "../components/CourseCard.astro";
 import TimelineList from "../components/TimelineList.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import Layout from "../layouts/Layout.astro";
 import {
-  advisingText,
   appointments,
   assets,
   awards,
   education,
   galleryImages,
   piProfile,
-  researchInterests,
+  teachingRecords,
 } from "../data/site";
 
 const profileLinks = [
-  { label: "Email", icon: Mail },
-  { label: "KAIST Profile", icon: Building2 },
-  { label: "Harvard Profile", icon: ExternalLink },
-  { label: "ORCID", icon: IdCard },
+  { label: "KAIST Profile", icon: Building2, url: "https://stp.kaist.ac.kr/FacultyFull_time_Professor/view/id/120" },
+  { label: "Harvard Profile", icon: GraduationCap, url: "https://histsci.fas.harvard.edu/people/jongsik-christian-yi" },
+  { label: "ORCID", icon: IdCard, url: "https://orcid.org/0000-0001-5660-1065" },
+];
+
+const contactEmails = [
+  "jongsikyi@kaist.ac.kr",
+  "dangs0713@gmail.com",
 ];
 ---
 
@@ -41,12 +45,53 @@ const profileLinks = [
           {profileLinks.map((link) => {
             const Icon = link.icon;
             return (
-              <a href="#" class="profile-link">
+              <a
+                href={link.url || "#"} 
+                target={link.url ? "_blank" : undefined}
+                rel={link.url ? "noopener noreferrer" : undefined}
+                class="profile-link"
+              >
                 <Icon aria-hidden="true" size={16} strokeWidth={1.8} />
                 <span>{link.label}</span>
               </a>
             );
           })}
+        </div>
+        <div class="profile-contact" aria-label="Contact emails">
+          <Mail aria-hidden="true" size={16} strokeWidth={1.8} />
+          {contactEmails.map((email, index) => (
+            <>
+              <a href={`mailto:${email}`} class="profile-email">{email}</a>
+              {index < contactEmails.length - 1 && (
+                <span class="profile-contact__separator" aria-hidden="true">•</span>
+              )}
+            </>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section" aria-labelledby="scholarship-heading">
+      <div class="section-shell pi-intro-section">
+        <div class="section-heading">
+          <h2 id="scholarship-heading">Publications & Academic Service</h2>
+        </div>
+        <div class="rich-copy pi-long-bio">
+          <p>
+            He is the author of <em>More-Than People's Communes: Veterinary Workers and Nonhuman Animals in Mao-Era China</em>
+            (under contract with the University of Chicago Press) and <em>Animal History: The Birth of the Modern People
+            Who Love and Hate Animals</em> (in Korean, East Asia Books). He has also translated into Korean Victor Seow's
+            <em>Carbon Technocracy</em>, Warwick Anderson's <em>Spectacles of Waste</em>, Sigrid Schmalzer's
+            <em>Red Revolution, Green Revolution</em>, and Loren Graham's <em>Lysenko's Ghost</em>, among others.
+          </p>
+          <p>
+            His scholarly articles have appeared in leading international journals, including <em>The Journal of Asian
+            Studies</em>, <em>The Bulletin of the History of Medicine</em>, <em>Historical Studies in the Natural
+            Sciences</em>, and <em>The Journal of the History of Biology</em>. Professor Yi is currently an associate
+            editor of <em>East Asian Science, Technology, and Medicine</em> and <em>The Korean Journal for the History of
+            Science</em>. He also serves on the boards of the Korea Foundation for Women In Science, Engineering and
+            Technology (WISET); the Korean History of Science Society; and the Korean Association for Cold War Studies.
+          </p>
         </div>
       </div>
     </section>
@@ -56,7 +101,7 @@ const profileLinks = [
         <div class="section-heading">
           <h2 id="appointments-heading">Academic Appointments</h2>
         </div>
-        <TimelineList items={appointments} />
+        <TimelineList items={appointments} highlightFirst />
       </div>
     </section>
 
@@ -70,21 +115,22 @@ const profileLinks = [
     </section>
 
     <section class="page-section page-section--warm" aria-labelledby="interests-heading">
-      <div class="section-shell two-column-section">
-        <article>
-          <div class="section-heading">
-            <h2 id="interests-heading">Research Interests</h2>
-          </div>
-          <div class="pill-list">
-            {researchInterests.map((interest) => <span>{interest}</span>)}
-          </div>
-        </article>
-        <article class="rich-copy">
-          <div class="section-heading">
-            <h2>Teaching &amp; Advising</h2>
-          </div>
-          <p>{advisingText}</p>
-        </article>
+      <div class="section-shell pi-teaching-section">
+        <div class="section-heading">
+          <h2 id="interests-heading">Teaching</h2>
+        </div>
+        <div class="teaching-records teaching-records--pi">
+          {teachingRecords.map((group) => (
+            <section class="course-group" aria-labelledby={`${group.institution.toLowerCase().replaceAll(" ", "-")}-pi-heading`}>
+              <div class="course-group__heading">
+                <h3 id={`${group.institution.toLowerCase().replaceAll(" ", "-")}-pi-heading`}>{group.institution}</h3>
+              </div>
+              <div class="course-list">
+                {group.courses.map((course) => <CourseCard title={course.title} offerings={course.offerings} />)}
+              </div>
+            </section>
+          ))}
+        </div>
       </div>
     </section>
 
