@@ -119,7 +119,7 @@ export const researchThemes = [
     keywords: "animal studies, zoonotic diseases, agrarian studies,\nOne Health",
   },
   {
-    title: "Democratic Technology Studies",
+    title: "Democratic Technocracy Studies",
     keywords: "technoscience and governance, technocrats in democracy, government research institutions",
   },
   {

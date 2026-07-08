@@ -98,7 +98,7 @@ export const publicationSections: PublicationSection[] = [
           "Possibilities and Limitations of Mass Science: Hydrobiologist Nie Dashu and the Making of Knowledge on Fish Diseases Before the Great Leap",
         details: [
           "In A Revolution Across Arts and Sciences: Participatory Knowledge Production in China’s Great Leap Forward, eds. Christine Ho and Sigrid Schmalzer. Hong Kong University Press.",
-          "Jongsik Christian Yi (forthcoming in July 2026).",
+          "Jongsik Christian Yi. Hong Kong University Press, 2026.",
         ],
         linkLabel: "View Publisher Site",
         url: "https://hkupress.hku.hk/Subject/history?product_id=1749&limit=20",
@@ -132,6 +132,17 @@ export const publicationSections: PublicationSection[] = [
     title: "Journal Articles",
     navLabel: "Journal Articles",
     items: [
+      {
+        type: "Articles",
+        language: "English",
+        title:
+          "The Development of Modern East Asian History of Science and Technology and the Prospects for Korean Studies [근현대 동아시아 과학기술사의 전개와 한국학의 전망]",
+        details: [
+          "Jongsik Christian Yi, Ho-Chul Seo, Youjung Shin et al. Korean Studies Quarterly, Vol. 49, No. 2 (June 2026): 257-313.",
+        ],
+        linkLabel: "View Article",
+        url: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003344073",
+      },
       {
         type: "Articles",
         language: "English",
@@ -361,6 +372,17 @@ export const publicationSections: PublicationSection[] = [
     items: [
       {
         type: "Review",
+        language: "Korean",
+        title: "Review of Lonely Ideas: Can Russia Compete?",
+        details: [
+          "Original Work: Loren Graham. Korean trans. Dong-hyuk Kim and Seung-cheol Heo, GIST Press, 2025.",
+          "Reviewed in: Science, Technology, and Society, Vol. 10 (June 2026): 344-352.",
+        ],
+        linkLabel: "View Publisher Site",
+        url: "",
+      },
+      {
+        type: "Review",
         language: "English",
         title: "Review of Human-Animal Relations and the Hunt in Korea and Northeast Asia",
         details: [
@@ -384,7 +406,7 @@ export const publicationSections: PublicationSection[] = [
       },
       {
         type: "Review",
-        language: "English",
+        language: "Korean",
         title: "Review of Histoire du traitement de la mélancolie [History of the Treatment of Melancholy]",
         details: [
           "Original Work: Jean Starobinski. Korean trans. Younguk Kim. ITTA, 2023.",
@@ -395,7 +417,7 @@ export const publicationSections: PublicationSection[] = [
       },
       {
         type: "Review",
-        language: "English",
+        language: "Korean",
         title: "Review of A Cultural History of Heredity",
         details: [
           "Original Work: Hans-Jörg Rheinberger and Staffan Müller-Wille. Korean trans. Jaehwan Hyun, Pusan National University Press, 2022",
@@ -444,6 +466,33 @@ export const publicationSections: PublicationSection[] = [
     title: "Public Writings",
     navLabel: "Public Writings",
     items: [
+      {
+        type: "Op-ed",
+        language: "Korean",
+        title:
+          "The Legacies of Fang Lizhi [과학과 민주의 길, 팡리즈의 유산]",
+        details: ["Jongsik Christian Yi. Hankyoreh, July 17, 2026."],
+        linkLabel: "View Online",
+        url: "",
+      },
+      {
+        type: "Interview",
+        language: "Korean",
+        title:
+          "중국 남부 홍수 피해 키운 ‘자력갱생’ 치수 정책…류란저수지 제방 붕괴에 당국 초긴장",
+        details: ["Interview with The Kyunghyang Shinmun. July 8, 2026."],
+        linkLabel: "View Online",
+        url: "https://www.khan.co.kr/article/202607081740001?fbclid=IwY2xjawS7A1dleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeSOxj5DIcXevHJd8nqBbsmVmD1l5yTEN7dmwY7pRDbH722hnyiU5qO7e1T5U_aem_pyK4NcWPztML7xvwAx53rQ",
+      },
+      {
+        type: "Op-ed",
+        language: "Korean",
+        title:
+          "What Do You Know about Qian Xuesen? [중국 ‘로켓왕’ 첸쉐썬을 아십니까?]",
+        details: ["Jongsik Christian Yi. Hankyoreh, June 18, 2026."],
+        linkLabel: "View Online",
+        url: "https://www.hani.co.kr/arti/opinion/column/1264250.html",
+      },
       {
         type: "Op-ed",
         language: "Korean",
