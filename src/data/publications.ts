@@ -136,17 +136,6 @@ export const publicationSections: PublicationSection[] = [
         type: "Articles",
         language: "English",
         title:
-          "The Development of Modern East Asian History of Science and Technology and the Prospects for Korean Studies [근현대 동아시아 과학기술사의 전개와 한국학의 전망]",
-        details: [
-          "Jongsik Christian Yi, Ho-Chul Seo, Youjung Shin et al. Korean Studies Quarterly, Vol. 49, No. 2 (June 2026): 257-313.",
-        ],
-        linkLabel: "View Article",
-        url: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003344073",
-      },
-      {
-        type: "Articles",
-        language: "English",
-        title:
           "Maoist Pigs: Swine, Communes, and the State in Rural China, 1949–1976",
         details: [
           "Jongsik Christian Yi. Journal of Asian Studies, Vol. 85, No. 2 (May 2026): 287–311.",
@@ -196,6 +185,17 @@ export const publicationSections: PublicationSection[] = [
         ],
         linkLabel: "View Article",
         url: "http://thepacificcircle.com/wp-content/uploads/Bulletin-of-the-Pacific-Circle-43-October-2019.pdf",
+      },
+      {
+        type: "Articles",
+        language: "Korean",
+        title:
+          "The Development of Modern East Asian History of Science and Technology and the Prospects for Korean Studies [근현대 동아시아 과학기술사의 전개와 한국학의 전망]",
+        details: [
+          "Jongsik Christian Yi, Ho-Chul Seo, Youjung Shin et al. Korean Studies Quarterly, Vol. 49, No. 2 (June 2026): 257-313.",
+        ],
+        linkLabel: "View Article",
+        url: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003344073",
       },
       {
         type: "Articles",
@@ -274,22 +274,24 @@ export const publicationSections: PublicationSection[] = [
         title: "The End of Concern: Maoist China, Activism, and Asian Studies",
         details: [
           "Original Work: Fabio Lanza. Duke University Press, 2017.",
-          "Translated by: Jaehee Seol and Jongsik Christian Yi. Geulhangari, forthcoming in July 2026",
+          "Translated by: Jaehee Seol and Jongsik Christian Yi. Geulhangari, forthcoming in July 2026.",
         ],
       },
       {
         type: "Translation",
         language: "Korean Edition",
-        title: "Spectacles of Waste",
+        title: "Spectacles of Waste [배설 스펙터클: 똥 누는 근대인에 관하여]",
         details: [
           "Original Work: Warwick Anderson. Polity, 2024.",
-          "Translated by: Jungha Hwang and Jongsik Christian Yi. May Books, forthcoming in July 2026.",
+          "Translated by: Jungha Hwang and Jongsik Christian Yi. May Books, 2026.",
         ],
+        linkLabel: "View Publisher Site",
+        url: "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=399387122",
       },
       {
         type: "Translation",
         language: "Korean Edition",
-        title: "Becoming MIT: Moments of Decision",
+        title: "Becoming MIT: Moments of Decision [MIT가 MIT가 되기까지]",
         details: [
           "Original Work: David Kaiser ed. MIT Press, 2010.",
           "Translated by: Taebok Roh, edited and introduced by Jongsik Christian Yi. Red Salt Books, 2026.",
@@ -300,7 +302,7 @@ export const publicationSections: PublicationSection[] = [
       {
         type: "Translation",
         language: "Korean Edition",
-        title: "Empires of Ideas: Creating the Modern University from Germany to America to China",
+        title: "Empires of Ideas: Creating the Modern University from Germany to America to China [지성의 제국: 현대 연구중심대학의 세계사]",
         details: [
           "Original Work: William C. Kirby. Harvard University Press, 2022.",
           "Translated by: Hyunjeong Lim, edited and introduced by Jongsik Christian Yi. Red Salt Books, 2026.",
@@ -311,7 +313,7 @@ export const publicationSections: PublicationSection[] = [
       {
         type: "Translation",
         language: "Korean Edition",
-        title: "Postcolonial STS and Asia as Method",
+        title: "Postcolonial STS and Asia as Method [서양과학은 없다: 탈식민주의 과학기술학의 도전]",
         details: [
           "Original Work: Warwick Anderson. 2025.",
           "Selected and translated by: Jongsik Christian Yi. Eum, 2025.",
@@ -322,7 +324,7 @@ export const publicationSections: PublicationSection[] = [
       {
         type: "Translation",
         language: "Korean Edition",
-        title: "Red Revolution, Green Revolution: Scientific Farming in Socialist China",
+        title: "Red Revolution, Green Revolution: Scientific Farming in Socialist China [붉은 녹색혁명: 마오 시대 중국의 농업개혁과 군중과학]",
         details: [
           "Original Work: Sigrid Schmalzer. University of Chicago Press, 2016.",
           "Translated by: Jongsik Christian Yi and Jiho Moon. Purunyoksa Publishing Co., 2025.",
@@ -333,7 +335,7 @@ export const publicationSections: PublicationSection[] = [
       {
         type: "Translation",
         language: "Korean Edition",
-        title: "Carbon Technocracy: Energy Regimes in Modern East Asia",
+        title: "Carbon Technocracy: Energy Regimes in Modern East Asia [탄소 기술관료주의: 동아시아 탄소 중독의 기원과 종말을 찾아서]",
         details: [
           "Original Work: Victor Seow. University of Chicago Press, 2022.",
           "Translated by: Jongsik Christian Yi. Red Salt Books, 2024.",
@@ -344,7 +346,7 @@ export const publicationSections: PublicationSection[] = [
       {
         type: "Translation",
         language: "Korean Edition",
-        title: "Lysenko's Ghost: Epigenetics and Russia",
+        title: "Lysenko's Ghost: Epigenetics and Russia [리센코의 망령: 소비에트 유전학의 굴곡진 역사]",
         details: [
           "Original Work: Loren Graham. Harvard University Press, 2016.",
           "Translated by: Jongsik Christian Yi. East Asia Books, 2021.",
@@ -355,7 +357,7 @@ export const publicationSections: PublicationSection[] = [
       {
         type: "Translation",
         language: "Korean Edition",
-        title: "Social Injustice and Public Health",
+        title: "Social Injustice and Public Health [사회정의와 건강: 사회 불의에 맞서 어떻게 건강을 지킬 것인가?]",
         details: [
           "Original Work: Barry S. Levy and Victor W. Sidel. Oxford University Press, 2nd ed, 2013.",
           "Translated by: Young-jeon Shin, Jongsik Christian Yi, et al. Hanul, 2021.",
@@ -473,7 +475,7 @@ export const publicationSections: PublicationSection[] = [
           "The Legacies of Fang Lizhi [과학과 민주의 길, 팡리즈의 유산]",
         details: ["Jongsik Christian Yi. Hankyoreh, July 17, 2026."],
         linkLabel: "View Online",
-        url: "",
+        url: "https://www.hani.co.kr/arti/opinion/column/1268645.html",
       },
       {
         type: "Interview",
