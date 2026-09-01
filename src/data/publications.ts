@@ -271,11 +271,13 @@ export const publicationSections: PublicationSection[] = [
       {
         type: "Translation",
         language: "Korean Edition",
-        title: "The End of Concern: Maoist China, Activism, and Asian Studies",
+        title: "The End of Concern: Maoist China, Activism, and Asian Studies [비판의 종언: 장기 1960년대 글로벌 마오주의와 미국의 아시아학]",
         details: [
           "Original Work: Fabio Lanza. Duke University Press, 2017.",
-          "Translated by: Jaehee Seol and Jongsik Christian Yi. Geulhangari, forthcoming in July 2026.",
+          "Translated by: Jaehee Seol and Jongsik Christian Yi. Geulhangari, 2026.",
         ],
+        linkLabel: "View Publisher Site",
+        url: "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=400709243",
       },
       {
         type: "Translation",
@@ -468,6 +470,15 @@ export const publicationSections: PublicationSection[] = [
     title: "Public Writings",
     navLabel: "Public Writings",
     items: [
+      {
+        type: "Op-ed",
+        language: "Korean",
+        title:
+          "The Origins of Red Technocracy in China [중국, ‘암묵의 계약’으로 갱신되는 엔지니어의 나라]",
+        details: ["Jongsik Christian Yi. Hankyoreh, August 15, 2026."],
+        linkLabel: "View Online",
+        url: "https://www.hani.co.kr/arti/opinion/column/1272870.html"
+      },
       {
         type: "Op-ed",
         language: "Korean",
