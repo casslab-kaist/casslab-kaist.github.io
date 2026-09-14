@@ -190,6 +190,17 @@ export const publicationSections: PublicationSection[] = [
         type: "Articles",
         language: "Korean",
         title:
+          "Reading the “Spring of Science” in China’s Long 1980s: From the Masses to the Technocrats, from Revolution to Systems, from Self-Reliance to Linking Up [장기 1980년대 중국 ‘과학의 봄’ 독법: 인민에서 인재로, 혁명에서 시스템으로, 자력갱생에서 접궤로]",
+        details: [
+            "Jongsik Christian Yi. The Korean Journal of Chinese Social Sciences, Vol. 8, No. 2 (August 2026): 67-93.",
+        ],
+        linkLabel: "View Article",
+        url: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003380191",
+      },
+      {
+        type: "Articles",
+        language: "Korean",
+        title:
           "The Development of Modern East Asian History of Science and Technology and the Prospects for Korean Studies [근현대 동아시아 과학기술사의 전개와 한국학의 전망]",
         details: [
           "Jongsik Christian Yi, Ho-Chul Seo, Youjung Shin et al. Korean Studies Quarterly, Vol. 49, No. 2 (June 2026): 257-313.",
@@ -470,6 +481,15 @@ export const publicationSections: PublicationSection[] = [
     title: "Public Writings",
     navLabel: "Public Writings",
     items: [
+      {
+        type: "Op-ed",
+        language: "Korean",
+        title:
+          "The Birth of Scientists Who Rule [‘한자녀 정책’ 설계한 미사일 과학자… 통치의 자격을 묻다]",
+        details: ["Jongsik Christian Yi. Hankyoreh, September 10, 2026."],
+        linkLabel: "View Online",
+        url: "https://www.hani.co.kr/arti/opinion/column/1277264.html"
+      },
       {
         type: "Op-ed",
         language: "Korean",
