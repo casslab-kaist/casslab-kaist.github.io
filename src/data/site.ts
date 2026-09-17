@@ -269,6 +269,8 @@ export const currentMembers = [
   { name: "Taeyoon Claire Kim", role: "M.S. Student", affiliation: "KAIST STP" },
   { name: "Chae-un Yim", role: "Ph.D. Student", affiliation: "KAIST GGGS" },
   { name: "Ruoxi Li", role: "M.S. Student", affiliation: "KAIST STP" },
+  { name: "Muhammad Sachio Ramiro", role: "M.S. Student", affiliation: "KAIST STP" },
+  { name: "Sonia Wang", role: "M.S. Student", affiliation: "KAIST STP" },
 ];
 
 export const researchAssistants = [
@@ -285,8 +287,12 @@ export const teachingRecords = [
     institution: "KAIST",
     courses: [
       {
+        title: "Chinese Science and Technology",
+        offerings: [{ term: "Fall 2026", role: "Instructor" }],
+      },
+      {
         title: "Survey in Science and Technology Studies",
-        offerings: [{ term: "Spring 2026", role: "Instructor" }],
+        offerings: [{ term: "Spring 2026", role: "Instructor", evaluation: "5.0/5.0" }],
       },
       {
         title: "Science, Technology, and Asia",
@@ -350,7 +356,7 @@ export const teachingRecords = [
       },
       {
         title: "Medicine and Health in America",
-        offerings: [{ term: "Spring 2020", role: "Teaching Fellow for Prof. Ann Marie." }],
+        offerings: [{ term: "Spring 2020", role: "Teaching Fellow for Prof. Eram Alam." }],
       },
       {
         title: "Engineering East Asia: Technology, Society, and the State",
