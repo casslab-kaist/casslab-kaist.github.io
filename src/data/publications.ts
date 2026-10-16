@@ -482,13 +482,31 @@ export const publicationSections: PublicationSection[] = [
     navLabel: "Public Writings",
     items: [
       {
+        type: "Public Essay",
+        language: "Korean",
+        title:
+          "Excretion, Aesthetics, and Colonialism [배설, 미학, 식민주의]",
+        details: ["Jongsik Christian Yi. Seoul Museum of Art Coral (SeMa Coral), October 26, 2026."],
+        linkLabel: "View Online",
+        url: "https://semacoral.org/features/jongsik-christian-yi-excretion-aesthetics-and-colonialism",
+      },
+      {
+        type: "Op-ed",
+        language: "Korean",
+        title:
+          "Chinese Engineers in the Gilded Cage [중국 엘리트 엔지니어는 왜 스스로를 ‘인육전지’라 부를까]",
+        details: ["Jongsik Christian Yi. Hankyoreh, October 16, 2026."],
+        linkLabel: "Veiw Online",
+        url: "https://www.hani.co.kr/arti/opinion/column/1282670.html",
+      },
+      {
         type: "Op-ed",
         language: "Korean",
         title:
           "The Birth of Scientists Who Rule [‘한자녀 정책’ 설계한 미사일 과학자… 통치의 자격을 묻다]",
         details: ["Jongsik Christian Yi. Hankyoreh, September 10, 2026."],
         linkLabel: "View Online",
-        url: "https://www.hani.co.kr/arti/opinion/column/1277264.html"
+        url: "https://www.hani.co.kr/arti/opinion/column/1277264.html",
       },
       {
         type: "Op-ed",
@@ -497,7 +515,7 @@ export const publicationSections: PublicationSection[] = [
           "The Origins of Red Technocracy in China [중국, ‘암묵의 계약’으로 갱신되는 엔지니어의 나라]",
         details: ["Jongsik Christian Yi. Hankyoreh, August 15, 2026."],
         linkLabel: "View Online",
-        url: "https://www.hani.co.kr/arti/opinion/column/1272870.html"
+        url: "https://www.hani.co.kr/arti/opinion/column/1272870.html",
       },
       {
         type: "Op-ed",
@@ -533,7 +551,7 @@ export const publicationSections: PublicationSection[] = [
           "After China’s Scientific Rise #1: Can Shanzhai Lift the China Dream? [이종식의 중국 과학굴기 너머 01: ‘산자이’는 중국몽의 지렛대가 될까]",
         details: ["Jongsik Christian Yi. Hankyoreh, May 22, 2026."],
         linkLabel: "View Online",
-        url: "https://www.hani.co.kr/arti/opinion/column/1259917.html?fbclid=IwY2xjawR99_lleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeO8D4843a9SVlKlmGhm9yEgCvDioqYMLThgNk8B0pgSihORC8k6nluw3B8zU_aem_BBMrdPAgYNtTyGpNQ3-Neg",
+        url: "https://www.hani.co.kr/arti/opinion/column/1259917.html",
       },
       {
         type: "Interview",
@@ -549,7 +567,7 @@ export const publicationSections: PublicationSection[] = [
         title: "양자컴 교수에 교육부 맡겼다… ‘딥시크 쇼크’ 中 혁신의 비밀",
         details: ["Interview with The JoongAng Daily. January 21, 2026."],
         linkLabel: "View Online",
-        url: "https://www.joongang.co.kr/article/25398914?fbclid=IwY2xjawPeeHVleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeCjFghdLx0zO85qIvL1avHU7SvV4KhwVgScy2o1OFC8xW8pxztkSmE3p8KBU_aem_XiUe9enbpSxjB2oT7Pdjyg",
+        url: "https://www.joongang.co.kr/article/25398914",
       },
       {
         type: "Public Essay",
