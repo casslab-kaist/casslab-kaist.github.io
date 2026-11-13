@@ -264,23 +264,95 @@ export const galleryImages = [
   { src: "/pi-gallery-4.png", alt: "Jongsik Christian Yi standing in a library" },
 ];
 
-export const currentMembers = [
-  { name: "Kyungbin Koh", role: "Ph.D. Student", affiliation: "KAIST STP" },
-  { name: "Taeyoon Claire Kim", role: "M.S. Student", affiliation: "KAIST STP" },
-  { name: "Chae-un Yim", role: "Ph.D. Student", affiliation: "KAIST GGGS" },
-  { name: "Ruoxi Li", role: "M.S. Student", affiliation: "KAIST STP" },
-  { name: "Muhammad Sachio Ramiro", role: "M.S. Student", affiliation: "KAIST STP" },
-  { name: "Sonia Wang", role: "M.S. Student", affiliation: "KAIST STP" },
+export interface LabMember {
+  /** English name as displayed. */
+  name: string;
+  /** Name in Korean (or other native) script, shown next to the English name. */
+  nativeName?: string;
+  /** Shown on the page as "user (at) domain". */
+  email?: string;
+  /** Degree program, e.g. "PhD", "MS", "BS". */
+  program: string;
+  /** Start of membership, e.g. "Aug. 2026". */
+  since?: string;
+  /** End of membership (alumni only), e.g. "Feb. 2028". */
+  until?: string;
+  /** Research interests (students), home department (RAs), or current position (alumni). */
+  detail?: string;
+}
+
+export const phdStudents: LabMember[] = [
+  {
+    name: "Haneul Lee",
+    nativeName: "이하늘",
+    email: "hnlee@kaist.ac.kr",
+    program: "PhD",
+    since: "Feb. 2027",
+    detail: "Multispecies STS, Animal History",
+  },
+  {
+    name: "Chaeri Yang",
+    nativeName: "양채리",
+    email: "ychaeri@kaist.ac.kr",
+    program: "PhD",
+    since: "Feb. 2027",
+    detail: "History of science in modern China",
+  },
 ];
 
-export const researchAssistants = [
-  { name: "Minsol Bang", role: "Undergraduate RA", affiliation: "Dept. of Chemistry" },
-  { name: "Sihyeong Song", role: "Undergraduate RA", affiliation: "Dept. of Biology" },
-  { name: "Junseok Lee", role: "Undergraduate RA", affiliation: "Dept. of AI Computing" },
+export const msStudents: LabMember[] = [
+  {
+    name: "Ruoxi “Rosy” Li",
+    email: "liruoxi@kaist.ac.kr",
+    program: "MS",
+    since: "Aug. 2025",
+    detail: "History of the Chinese electronics industry in the Reform era, AI governance and law",
+  },
+  {
+    name: "Sonia Wang",
+    nativeName: "왕숙연",
+    email: "sw7732@kaist.ac.kr",
+    program: "MS",
+    since: "Aug. 2026",
+    detail: "STS and multiculturalism and diaspora studies",
+  },
+  {
+    name: "Muhammad Sachio Ramiro",
+    email: "sachio.ramiro@kaist.ac.kr",
+    program: "MS",
+    since: "Aug. 2026",
+    detail: "STS and Indonesian Studies, Technocrats and research universities in Indonesia",
+  },
+  {
+    name: "Jimyeong Kwon",
+    nativeName: "권지명",
+    email: "kjm120@kaist.ac.kr",
+    program: "MS",
+    since: "Aug. 2026",
+    detail: "STS, disability, and care",
+  },
+  {
+    name: "Sehyun Choi",
+    nativeName: "최세현",
+    email: "sehyunchoi@kaist.ac.kr",
+    program: "MS",
+    since: "Aug. 2026",
+    detail: "STS, disability, minorities, and inequities",
+  },
 ];
 
-export const alumni = [
+export const researchAssistants: LabMember[] = [
+  { name: "Kyungbin Koh", nativeName: "고경빈", program: "PhD", detail: "KAIST STP" },
+  { name: "Chae-un Yim", nativeName: "임채은", program: "PhD", detail: "KAIST GGGS" },
+  { name: "Taeyoon Claire Kim", nativeName: "김태윤", program: "MS", detail: "KAIST STP" },
+  { name: "Junseok Lee", nativeName: "이준석", program: "BS", detail: "KAIST AI Computing" },
+  { name: "Sihyeong Song", nativeName: "송시형", program: "BS", detail: "KAIST Biology" },
+  { name: "Minsol Bang", nativeName: "방민솔", program: "BS", detail: "KAIST Chemistry" },
 ];
+
+// Alumni use the same fields, e.g.
+// { name: "...", nativeName: "...", program: "MS", since: "Aug. 2025", until: "Aug. 2027", detail: "Current position" }
+export const alumni: LabMember[] = [];
 
 export const teachingRecords = [
   {

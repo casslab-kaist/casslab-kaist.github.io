@@ -1,0 +1,49 @@
+---
+import { Mail } from "@lucide/astro";
+import type { LabMember } from "../data/site";
+
+interface Props {
+  members: LabMember[];
+}
+
+const { members } = Astro.props;
+
+const formatEmail = (email: string) => email.replace("@", " (at) ");
+const formatPeriod = (since?: string, until?: string) => {
+  if (!since) return undefined;
+  return until ? `${since}–${until}` : `${since}–`;
+};
+const nativeLang = (text: string) => (/[가-힣]/.test(text) ? "ko" : undefined);
+---
+
+{
+  members.length > 0 && (
+    <ul class="member-list">
+      {members.map((member) => {
+        const period = formatPeriod(member.since, member.until);
+        return (
+          <li class="member-row">
+            <div class="member-row__identity">
+              <h3 class="member-row__name">
+                {member.name}
+                {member.nativeName && (
+                  <span class="member-row__native" lang={nativeLang(member.nativeName)}>
+                    {member.nativeName}
+                  </span>
+                )}
+              </h3>
+              {member.email && (
+                <p class="member-row__email">
+                  <Mail aria-hidden="true" size={14} strokeWidth={1.9} />
+                  <span>{formatEmail(member.email)}</span>
+                </p>
+              )}
+            </div>
+            <p class="member-row__program">{period ? `${member.program} (${period})` : member.program}</p>
+            {member.detail && <p class="member-row__detail">{member.detail}</p>}
+          </li>
+        );
+      })}
+    </ul>
+  )
+}

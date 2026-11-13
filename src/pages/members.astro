@@ -1,43 +1,34 @@
 ---
 import Hero from "../components/Hero.astro";
-import PersonCard from "../components/PersonCard.astro";
+import MemberList from "../components/MemberList.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import Layout from "../layouts/Layout.astro";
-import { alumni, assets, currentMembers, researchAssistants } from "../data/site";
+import { alumni, assets, msStudents, phdStudents, researchAssistants } from "../data/site";
+
+const memberGroups = [
+  { id: "phd-students", title: "PhD Students", members: phdStudents },
+  { id: "ms-students", title: "MS Students", members: msStudents },
+  { id: "research-assistants", title: "Research Assistants", members: researchAssistants },
+  { id: "alumni", title: "Alumni", members: alumni },
+];
 ---
 
-<Layout title="Members | CASS Lab" description="Current members, research assistants, and alumni of CASS Lab.">
+<Layout title="Members | CASS Lab" description="PhD and MS students, research assistants, and alumni of CASS Lab.">
   <SiteHeader activePath="/members/" />
   <Hero title="Members" image={assets.membersHero} />
   <main class="page-main page-main--warm" id="content">
     <div class="section-shell member-sections">
-      <section aria-labelledby="current-members-heading">
-        <div class="section-heading">
-          <h2 id="current-members-heading">Current Members</h2>
-        </div>
-        <div class="people-grid people-grid--members">
-          {currentMembers.map((member) => <PersonCard {...member} withPortraitPlaceholder />)}
-        </div>
-      </section>
-
-      <section aria-labelledby="research-assistants-heading">
-        <div class="section-heading">
-          <h2 id="research-assistants-heading">Research Assistants</h2>
-        </div>
-        <div class="people-grid people-grid--assistants">
-          {researchAssistants.map((member) => <PersonCard {...member} />)}
-        </div>
-      </section>
-
-      <section aria-labelledby="alumni-heading">
-        <div class="section-heading">
-          <h2 id="alumni-heading">Alumni</h2>
-        </div>
-        <div class="people-grid people-grid--alumni">
-          {alumni.map((member) => <PersonCard name={member.name} degree={member.degree} current={member.current} />)}
-        </div>
-      </section>
+      {
+        memberGroups.map((group) => (
+          <section id={group.id} aria-labelledby={`${group.id}-heading`}>
+            <div class="section-heading">
+              <h2 id={`${group.id}-heading`}>{group.title}</h2>
+            </div>
+            <MemberList members={group.members} />
+          </section>
+        ))
+      }
     </div>
   </main>
   <SiteFooter />
