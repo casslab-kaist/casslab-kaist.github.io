@@ -1,8 +1,6 @@
 ---
 import { ChevronDown } from "@lucide/astro";
 import Hero from "../components/Hero.astro";
-import SiteFooter from "../components/SiteFooter.astro";
-import SiteHeader from "../components/SiteHeader.astro";
 import Layout from "../layouts/Layout.astro";
 import { assets, assetSources, faqItems, fieldsAndRegions, studyAreas } from "../data/site";
 ---
@@ -11,7 +9,6 @@ import { assets, assetSources, faqItems, fieldsAndRegions, studyAreas } from "..
   title="About | CASS Lab"
   description="About the Chinese and Asian Science Studies Lab at KAIST STP."
 >
-  <SiteHeader activePath="/about/" />
   <Hero title="About" image={assets.aboutHero} imageSource={assetSources.aboutHero} />
   <main id="content">
     <section class="page-section page-section--flush" aria-labelledby="about-lab-heading">
@@ -88,5 +85,4 @@ import { assets, assetSources, faqItems, fieldsAndRegions, studyAreas } from "..
       </div>
     </section>
   </main>
-  <SiteFooter />
 </Layout>

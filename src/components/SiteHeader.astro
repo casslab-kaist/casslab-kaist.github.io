@@ -1,11 +1,8 @@
 ---
 import { assets, navItems } from "../data/site";
 
-interface Props {
-  activePath?: string;
-}
-
-const { activePath = "/" } = Astro.props;
+// Nav hrefs end in a slash ("/about/"), so add one if the URL lacks it.
+const currentPath = Astro.url.pathname.replace(/\/?$/, "/");
 ---
 
 <header class="site-header">
@@ -15,16 +12,14 @@ const { activePath = "/" } = Astro.props;
       <span class="brand-name">CASS Lab</span>
     </a>
     <nav class="primary-nav" aria-label="Primary navigation">
-      {
-        navItems.map((item) => {
-          const isActive = item.href === activePath;
-          return (
+      {navItems.map((item) => {
+        const isActive = item.href === currentPath;
+        return (
           <a class:list={["nav-link", isActive && "is-active"]} href={item.href} aria-current={isActive ? "page" : undefined}>
             {item.label}
           </a>
-          );
-        })
-      }
+        );
+      })}
     </nav>
   </div>
 </header>

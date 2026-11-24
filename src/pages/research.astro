@@ -1,8 +1,6 @@
 ---
 import { GraduationCap, Landmark, PawPrint, Scale, ShieldCheck } from "@lucide/astro";
 import Hero from "../components/Hero.astro";
-import SiteFooter from "../components/SiteFooter.astro";
-import SiteHeader from "../components/SiteHeader.astro";
 import Layout from "../layouts/Layout.astro";
 import { assets, assetSources, currentProjects, researchThemes } from "../data/site";
 
@@ -10,7 +8,6 @@ const themeIcons = [Scale, GraduationCap, PawPrint, Landmark, ShieldCheck];
 ---
 
 <Layout title="Research | CASS Lab" description="Research themes, areas, and current projects at CASS Lab.">
-  <SiteHeader activePath="/research/" />
   <Hero title="Research" image={assets.researchHero} imageSource={assetSources.researchHero} />
   <main id="content">
     <section class="page-section page-section" aria-labelledby="themes-heading">
@@ -68,5 +65,4 @@ const themeIcons = [Scale, GraduationCap, PawPrint, Landmark, ShieldCheck];
       </div>
     </section>
   </main>
-  <SiteFooter />
 </Layout>

@@ -2,8 +2,6 @@
 import { Building2, GraduationCap, IdCard, Mail } from "@lucide/astro";
 import CourseCard from "../components/CourseCard.astro";
 import TimelineList from "../components/TimelineList.astro";
-import SiteFooter from "../components/SiteFooter.astro";
-import SiteHeader from "../components/SiteHeader.astro";
 import Layout from "../layouts/Layout.astro";
 import {
   appointments,
@@ -28,7 +26,6 @@ const contactEmails = [
 ---
 
 <Layout title="Jongsik Christian Yi | CASS Lab" description="Principal Investigator profile for CASS Lab at KAIST STP.">
-  <SiteHeader activePath="/pi/" />
   <main id="content">
     <section class="profile-hero" aria-labelledby="pi-title">
       <figure class="profile-hero__portrait">
@@ -168,5 +165,4 @@ const contactEmails = [
       </div>
     </section>
   </main>
-  <SiteFooter />
 </Layout>

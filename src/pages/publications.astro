@@ -3,8 +3,6 @@ import { ArrowUp } from "@lucide/astro";
 import Hero from "../components/Hero.astro";
 import PublicationsSection from "../components/PublicationsSection.astro";
 import SidebarNav from "../components/SidebarNav.astro";
-import SiteFooter from "../components/SiteFooter.astro";
-import SiteHeader from "../components/SiteHeader.astro";
 import Layout from "../layouts/Layout.astro";
 import { publicationSections, totalPublicationCount } from "../data/publications";
 import { assets } from "../data/site";
@@ -14,7 +12,6 @@ import { assets } from "../data/site";
   title="Publications | CASS Lab"
   description="Books, articles, translations, reviews, and public essays from Chinese and Asian Science Studies Lab at KAIST."
 >
-  <SiteHeader activePath="/publications/" />
   <Hero title="Publications" image={assets.publicationsHero} />
   <main class="page-main" id="content">
     <div class="content-shell" id="publications">
@@ -31,7 +28,6 @@ import { assets } from "../data/site";
       <span>Top</span>
     </a>
   </main>
-  <SiteFooter />
   <script define:vars={{ sectionIds: publicationSections.map((section) => section.id) }}>
     const links = new Map(
       sectionIds.map((id) => [id, document.querySelector(`[data-category-link="${id}"]`)]),

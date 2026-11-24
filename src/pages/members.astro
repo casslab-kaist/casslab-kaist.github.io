@@ -1,8 +1,6 @@
 ---
 import Hero from "../components/Hero.astro";
 import MemberList from "../components/MemberList.astro";
-import SiteFooter from "../components/SiteFooter.astro";
-import SiteHeader from "../components/SiteHeader.astro";
 import Layout from "../layouts/Layout.astro";
 import { alumni, assets, msStudents, phdStudents, researchAssistants } from "../data/site";
 
@@ -15,7 +13,6 @@ const memberGroups = [
 ---
 
 <Layout title="Members | CASS Lab" description="PhD and MS students, research assistants, and alumni of CASS Lab.">
-  <SiteHeader activePath="/members/" />
   <Hero title="Members" image={assets.membersHero} />
   <main class="page-main page-main--warm" id="content">
     <div class="section-shell member-sections">
@@ -31,5 +28,4 @@ const memberGroups = [
       }
     </div>
   </main>
-  <SiteFooter />
 </Layout>
