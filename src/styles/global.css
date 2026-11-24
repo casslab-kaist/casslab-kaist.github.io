@@ -54,8 +54,7 @@ a {
   text-underline-offset: 0.18em;
 }
 
-a:focus-visible,
-.publication-action:focus-visible {
+a:focus-visible {
   outline: 3px solid color-mix(in srgb, var(--color-accent), white 35%);
   outline-offset: 4px;
 }
@@ -163,7 +162,7 @@ a:focus-visible,
     var(--hero-image);
   background-position: bottom;
   background-size: cover;
-  inset: -80px 0; 
+  inset: -80px 0;
   position: absolute;
   will-change: transform;
 }
@@ -173,17 +172,14 @@ a:focus-visible,
   bottom: 0.5rem;
   right: 0.5rem;
   z-index: 2;
-  
   font-size: 0.7rem;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.8);
-  
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(2px);
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
-  
   pointer-events: none;
   user-select: none;
 }
@@ -199,7 +195,6 @@ a:focus-visible,
 .hero h1,
 .home-hero h1,
 .profile-hero h1 {
-  color: inherit;
   font-family: var(--font-display);
   font-size: 4rem;
   font-weight: 400;
@@ -261,7 +256,7 @@ a:focus-visible,
   box-shadow: 16px 16px 0px 0px var(--color-warm);
 
   @media (min-width: 1024px) {
-    margin-right: -2.5rem; 
+    margin-right: -2.5rem;
   }
 }
 
@@ -276,17 +271,9 @@ a:focus-visible,
   padding: 4.5rem 1.5rem 5rem;
 }
 
-.page-main--warm {
-  background: var(--color-page);
-}
-
 .page-section {
   background: var(--color-surface);
   padding: 4.5rem 1.5rem;
-}
-
-.page-section--flush {
-  padding-top: 4.5rem;
 }
 
 .page-section--warm {
@@ -314,7 +301,7 @@ a:focus-visible,
 .section-heading h2,
 .split-section h2,
 .home-pi h2,
-.course-group__heading h3 {
+.publication-section h2 {
   color: var(--color-navy);
   font-family: var(--font-section);
   font-size: 2.25rem;
@@ -538,7 +525,6 @@ a:focus-visible,
   gap: 0.55rem;
   min-height: 164px;
   height: 240px;
-  box-sizing: border-box;
   padding: 1.35rem;
   position: absolute;
   text-align: center;
@@ -591,7 +577,7 @@ a:focus-visible,
 
 .theme-card h3,
 .theme-card p {
-  white-space: pre-line; /* Tells the browser to render \n as a real line break */
+  white-space: pre-line; /* show the \n line breaks in the keywords data */
 }
 
 .theme-card--core {
@@ -601,7 +587,6 @@ a:focus-visible,
   left: 50%;
   min-height: 188px;
   top: 50%;
-  width: 300px;
 }
 
 .theme-card--core h3,
@@ -775,7 +760,7 @@ a:focus-visible,
 .profile-email {
   color: var(--color-navy);
   font-size: 0.9rem;
-  font-weight: 600; /* Slightly lighter than the 700 link weight for ideal text scanning */
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -975,18 +960,14 @@ a:focus-visible,
   margin: 0;
 }
 
-.teaching-records,
+.teaching-records {
+  display: grid;
+  gap: 2.75rem;
+}
+
 .course-list {
   display: grid;
   gap: 1rem;
-}
-
-.teaching-records {
-  gap: 3rem;
-}
-
-.teaching-records--pi {
-  gap: 2.75rem;
 }
 
 .course-group {
@@ -1000,6 +981,7 @@ a:focus-visible,
   font-family: var(--font-section);
   font-size: 1.65rem;
   font-weight: 400;
+  letter-spacing: 0;
   line-height: 1.25;
   margin: 0;
   padding-bottom: 0.45rem;
@@ -1135,12 +1117,6 @@ a:focus-visible,
 
 .publication-section h2 {
   border-bottom: 1px solid var(--color-border);
-  color: var(--color-navy);
-  font-family: var(--font-section);
-  font-size: 2.25rem;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.2;
   margin: 0 0 1.5rem;
   padding-bottom: 0.55rem;
 }
@@ -1455,13 +1431,10 @@ a:focus-visible,
   }
 
   .category-panel {
-    position: static;
-  }
-
-  .category-panel {
     background: color-mix(in srgb, var(--color-page), white 26%);
     border: 1px solid var(--color-border);
     padding: 1rem;
+    position: static;
   }
 
   .category-panel nav {
@@ -1532,9 +1505,7 @@ a:focus-visible,
     height: auto;
   }
 
-  .theme-card,
-  .theme-card:nth-child(n),
-  .theme-card--core {
+  .theme-card {
     left: auto;
     min-height: auto;
     position: static;
