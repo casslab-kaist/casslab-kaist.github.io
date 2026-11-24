@@ -2,11 +2,10 @@
 interface Props {
   title: string;
   image: string;
-  eyebrow?: string;
-  imageSource?: string; // Kept!
+  imageSource?: string;
 }
 
-const { title, image, eyebrow, imageSource } = Astro.props;
+const { title, image, imageSource } = Astro.props;
 ---
 
 <section class="hero" aria-labelledby="page-title">
@@ -17,7 +16,6 @@ const { title, image, eyebrow, imageSource } = Astro.props;
     </span>
   )}
   <div class="hero__inner">
-    {eyebrow && <p class="hero__eyebrow">{eyebrow}</p>}
     <h1 id="page-title">{title}</h1>
   </div>
 </section>

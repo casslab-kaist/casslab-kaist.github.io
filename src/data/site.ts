@@ -128,39 +128,6 @@ export const researchThemes = [
   },
 ];
 
-export const researchAreas = [
-  {
-    title: "History of Technology in Modern China",
-    description:
-      "Examining the industrialization, infrastructural development, and technological statecraft of 20th-century China, challenging Eurocentric narratives of modernization.",
-  },
-  {
-    title: "Science Policy in East Asia",
-    description:
-      "Analyzing the institutional mechanisms, funding structures, and political motivations driving scientific research in Korea, Japan, and Taiwan during the Cold War.",
-  },
-  {
-    title: "Environmental History of Asia",
-    description:
-      "Investigating the human-nature interface, resource extraction, and the ecological consequences of rapid technological advancement across the Asian continent.",
-  },
-  {
-    title: "Cold War Science",
-    description:
-      "Exploring the geopolitical dimensions of scientific exchange, secrecy, and competition between the Soviet bloc, the West, and non-aligned Asian nations.",
-  },
-  {
-    title: "Digital Humanities in Asian Studies",
-    description:
-      "Applying computational methods, network analysis, and text mining to large corpora of historical Asian scientific texts and archives.",
-  },
-  {
-    title: "STS in the Global South",
-    description:
-      "De-centering STS theory by foregrounding post-colonial perspectives and the unique epistemological positions of developing nations.",
-  },
-];
-
 export const currentProjects = [
   {
     title: "Basic Research for the Founding of the Global Research Security Center",
@@ -189,7 +156,6 @@ export const piProfile = {
   bio: [
     "Dr. Jongsik Christian Yi is an Assistant Professor in the Graduate School of Science and Technology Policy at KAIST. His research and teaching focus on the history and policy of science and technology in modern China, while also encompassing the history of science, science and technology studies (STS), and science and technology policy in East Asia (Korea and Japan) and Southeast Asia (Vietnam). His broader interests also include medical humanities, human–animal relations, and global higher education policy."
   ],
-  contactLabels: ["Email", "KAIST Profile", "Harvard Profile", "ORCID"],
 };
 
 export const appointments = [

@@ -1,24 +1,12 @@
 ---
-import {
-  Building2,
-  Compass,
-  GraduationCap,
-  Landmark,
-  Leaf,
-  Network,
-  PawPrint,
-  RadioTower,
-  Scale,
-  ShieldCheck,
-} from "@lucide/astro";
+import { GraduationCap, Landmark, PawPrint, Scale, ShieldCheck } from "@lucide/astro";
 import Hero from "../components/Hero.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import Layout from "../layouts/Layout.astro";
-import { assets, assetSources, currentProjects, researchAreas, researchThemes } from "../data/site";
+import { assets, assetSources, currentProjects, researchThemes } from "../data/site";
 
 const themeIcons = [Scale, GraduationCap, PawPrint, Landmark, ShieldCheck];
-const areaIcons = [Building2, Landmark, Leaf, RadioTower, Network, Compass];
 ---
 
 <Layout title="Research | CASS Lab" description="Research themes, areas, and current projects at CASS Lab.">
@@ -51,26 +39,6 @@ const areaIcons = [Building2, Landmark, Leaf, RadioTower, Network, Compass];
         </div>
       </div>
     </section>
-
-    <!-- <section class="page-section" aria-labelledby="areas-heading">
-      <div class="section-shell">
-        <div class="section-heading">
-          <h2 id="areas-heading">Areas of Research</h2>
-        </div>
-        <div class="card-grid card-grid--three">
-          {researchAreas.map((area, index) => {
-            const Icon = areaIcons[index];
-            return (
-            <article class="info-card research-card">
-              <span class="card-icon" aria-hidden="true"><Icon size={18} strokeWidth={1.8} /></span>
-              <h3>{area.title}</h3>
-              <p>{area.description}</p>
-            </article>
-            );
-          })}
-        </div>
-      </div>
-    </section> -->
 
     <section class="page-section page-section--warm" aria-labelledby="projects-heading">
       <div class="section-shell">
