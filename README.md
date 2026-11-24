@@ -1,46 +1,41 @@
-# Astro Starter Kit: Basics
+# CASS Lab website
+
+Source for the CASS Lab homepage at <https://cass.kaist.ac.kr>. It is a static site built with [Astro](https://docs.astro.build) and published to GitHub Pages.
+
+## Running it locally
+
+You need Node.js 22.12 or later.
 
 ```sh
-npm create astro@latest -- --template basics
+npm install       # once, to install dependencies
+npm run dev       # local preview at http://localhost:4321 that reloads as you edit
+npm run build     # build the site into dist/
+npm run preview   # serve the built dist/ folder
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Where things are
 
-## 🚀 Project Structure
+| Path | What it holds |
+| :--- | :--- |
+| `src/data/publications.ts` | The publication list, grouped into sections |
+| `src/data/site.ts` | Most other content: navigation, lab intro, FAQ, research themes, projects, PI profile, members, teaching |
+| `src/pages/` | One file per page. The file name is the URL: `members.astro` is `/members/` |
+| `src/layouts/Layout.astro` | The `<head>`, header, and footer shared by every page |
+| `src/components/` | Pieces of markup used by the pages |
+| `src/styles/global.css` | All styles |
+| `public/` | Images and other files served as they are: `public/hub.svg` is `/hub.svg` |
 
-Inside of your Astro project, you'll see the following folders and files:
+## Updating content
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+Most updates only touch the two data files in `src/data/`. Copy an existing entry, paste it next to the original, and change its fields. Entries appear on the page in the order they are listed.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+- **Publication**: add an entry to the `items` list of the right section in `src/data/publications.ts`. `linkLabel` and `url` are optional; set both to show a link.
+- **Member**: add an entry to `phdStudents`, `msStudents`, `researchAssistants`, or `alumni` in `src/data/site.ts`. The comments on `LabMember` in that file explain each field.
 
-## 🧞 Commands
+Some text is still written directly in the page files, for example the longer biography on `src/pages/pi.astro`.
 
-All commands are run from the root of the project, from a terminal:
+Run `npm run build` before you push. It stops with an error if a data file has a syntax mistake, such as a missing comma or quotation mark.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Deployment
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Every push to `main` runs `.github/workflows/astro.yml`, which builds the site and publishes it to GitHub Pages.
