@@ -42,12 +42,7 @@ const contactEmails = [
           {profileLinks.map((link) => {
             const Icon = link.icon;
             return (
-              <a
-                href={link.url || "#"} 
-                target={link.url ? "_blank" : undefined}
-                rel={link.url ? "noopener noreferrer" : undefined}
-                class="profile-link"
-              >
+              <a href={link.url} target="_blank" rel="noopener noreferrer" class="profile-link">
                 <Icon aria-hidden="true" size={16} />
                 <span>{link.label}</span>
               </a>
@@ -117,16 +112,19 @@ const contactEmails = [
           <h2 id="interests-heading">Teaching</h2>
         </div>
         <div class="teaching-records teaching-records--pi">
-          {teachingRecords.map((group) => (
-            <section class="course-group" aria-labelledby={`${group.institution.toLowerCase().replaceAll(" ", "-")}-pi-heading`}>
-              <div class="course-group__heading">
-                <h3 id={`${group.institution.toLowerCase().replaceAll(" ", "-")}-pi-heading`}>{group.institution}</h3>
-              </div>
-              <div class="course-list">
-                {group.courses.map((course) => <CourseCard title={course.title} offerings={course.offerings} />)}
-              </div>
-            </section>
-          ))}
+          {teachingRecords.map((group) => {
+            const headingId = `${group.institution.toLowerCase().replaceAll(" ", "-")}-pi-heading`;
+            return (
+              <section class="course-group" aria-labelledby={headingId}>
+                <div class="course-group__heading">
+                  <h3 id={headingId}>{group.institution}</h3>
+                </div>
+                <div class="course-list">
+                  {group.courses.map((course) => <CourseCard title={course.title} offerings={course.offerings} />)}
+                </div>
+              </section>
+            );
+          })}
         </div>
       </div>
     </section>
