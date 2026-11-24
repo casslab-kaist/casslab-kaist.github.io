@@ -702,8 +702,3 @@ export const publicationSections: PublicationSection[] = [
     ],
   },
 ];
-
-export const totalPublicationCount = publicationSections.reduce(
-  (count, section) => count + section.items.length,
-  0,
-);

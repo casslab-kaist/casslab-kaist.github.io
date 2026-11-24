@@ -1,11 +1,12 @@
 ---
 import { ArrowUp } from "@lucide/astro";
 import Hero from "../components/Hero.astro";
-import PublicationsSection from "../components/PublicationsSection.astro";
-import SidebarNav from "../components/SidebarNav.astro";
+import PublicationCard from "../components/PublicationCard.astro";
 import Layout from "../layouts/Layout.astro";
-import { publicationSections, totalPublicationCount } from "../data/publications";
+import { publicationSections } from "../data/publications";
 import { assets } from "../data/site";
+
+const totalPublicationCount = publicationSections.flatMap((section) => section.items).length;
 ---
 
 <Layout
@@ -15,12 +16,28 @@ import { assets } from "../data/site";
   <Hero title="Publications" image={assets.publicationsHero} />
   <main class="page-main" id="content">
     <div class="content-shell" id="publications">
-      <SidebarNav sections={publicationSections} />
+      <aside class="category-panel" aria-labelledby="category-heading">
+        <h2 id="category-heading">Categories</h2>
+        <nav aria-label="Publication categories">
+          {publicationSections.map((section, index) => (
+            <a class:list={["category-link", index === 0 && "is-active"]} data-category-link={section.id} href={`#${section.id}`}>
+              {section.navLabel}
+            </a>
+          ))}
+        </nav>
+      </aside>
       <div class="publications-content" aria-label="Publication list">
         <div class="publication-summary">
           <span>{totalPublicationCount} works</span>
         </div>
-        {publicationSections.map((section) => <PublicationsSection section={section} />)}
+        {publicationSections.map((section) => (
+          <section class="publication-section" id={section.id} aria-labelledby={`${section.id}-heading`}>
+            <h2 id={`${section.id}-heading`}>{section.title}</h2>
+            <div class="publication-list">
+              {section.items.map((publication) => <PublicationCard publication={publication} />)}
+            </div>
+          </section>
+        ))}
       </div>
     </div>
     <a class="top-button" href="#top" data-top-button aria-label="Back to top">
