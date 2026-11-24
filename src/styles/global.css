@@ -55,7 +55,6 @@ a {
 }
 
 a:focus-visible,
-button:focus-visible,
 .publication-action:focus-visible {
   outline: 3px solid color-mix(in srgb, var(--color-accent), white 35%);
   outline-offset: 4px;
@@ -213,7 +212,6 @@ button:focus-visible,
   color: #fff;
 }
 
-.hero__eyebrow,
 .section-kicker,
 .small-label {
   color: var(--color-muted);
@@ -410,13 +408,8 @@ button:focus-visible,
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.card-grid--three {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .info-card,
 .list-panel,
-.person-card,
 .course-card,
 .project-card {
   background: var(--color-surface);
@@ -432,7 +425,6 @@ button:focus-visible,
 
 .info-card h3,
 .list-panel h3,
-.person-card h3,
 .course-card h3,
 .project-card h3,
 .award-item h3,
@@ -446,8 +438,6 @@ button:focus-visible,
 
 .info-card p:not(.small-label),
 .list-panel li,
-.person-card p,
-.project-card p:not(.small-label),
 .theme-card p:not(.small-label) {
   color: var(--color-ink);
   font-size: 1rem;
@@ -621,19 +611,6 @@ button:focus-visible,
 
 .theme-card--core .small-label {
   color: #cfe4ff;
-}
-
-.card-icon {
-  align-items: center;
-  background: rgba(161, 62, 46, 0.08);
-  border: 1px solid rgba(161, 62, 46, 0.18);
-  border-radius: 999px;
-  color: var(--color-accent);
-  display: inline-flex;
-  height: 2rem;
-  justify-content: center;
-  line-height: 1;
-  width: 2rem;
 }
 
 .project-list {
@@ -852,25 +829,6 @@ button:focus-visible,
   margin: 0;
 }
 
-.pill-list,
-.keyword-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-}
-
-.pill-list span,
-.keyword-grid span {
-  background: color-mix(in srgb, var(--color-surface), white 55%);
-  border: 1px solid color-mix(in srgb, var(--color-navy), white 78%);
-  border-radius: 999px;
-  color: var(--color-blue);
-  font-size: 0.82rem;
-  font-weight: 650;
-  letter-spacing: 0.01em;
-  padding: 0.45rem 0.75rem;
-}
-
 .award-list {
   display: grid;
 }
@@ -1015,104 +973,6 @@ button:focus-visible,
   font-size: 0.95rem;
   line-height: 1.6;
   margin: 0;
-}
-
-.people-grid {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.people-grid--members {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.people-grid--alumni {
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-}
-
-.people-grid--assistants {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
-
-.person-card {
-  display: grid;
-  gap: 1.15rem;
-  padding: 1.25rem;
-}
-
-.person-card--portrait {
-  align-content: start;
-}
-
-.person-card__photo {
-  align-items: center;
-  aspect-ratio: 1;
-  background: var(--color-warm);
-  border: 1px solid var(--color-border);
-  border-radius: 3px;
-  color: var(--color-muted);
-  display: flex;
-  justify-content: center;
-  justify-self: center;
-  width: 100%;
-}
-
-.person-card__photo svg {
-  fill: none;
-  height: 2rem;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.8;
-  width: 2rem;
-}
-
-.person-card__role {
-  color: var(--color-navy);
-  font-size: 0.95rem;
-  font-weight: 750;
-  letter-spacing: 0;
-}
-
-.person-card__body {
-  display: grid;
-  gap: 0.65rem;
-}
-
-.person-card__meta {
-  display: grid;
-  gap: 0.45rem;
-}
-
-.person-card__affiliation {
-  align-items: center;
-  color: var(--color-muted);
-  display: inline-flex;
-  font-size: 0.86rem;
-  font-weight: 650;
-  gap: 0.42rem;
-  line-height: 1.35;
-}
-
-.person-card__affiliation svg {
-  color: var(--color-accent);
-  flex: 0 0 auto;
-}
-
-.person-card__degree {
-  color: var(--color-blue);
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-
-.person-card__current {
-  color: var(--color-ink);
-  font-size: 0.9rem;
-}
-
-.person-card__body {
-  display: grid;
-  gap: 0.35rem;
 }
 
 .teaching-records,
@@ -1582,13 +1442,6 @@ button:focus-visible,
     grid-template-columns: 1fr;
   }
 
-  .card-grid--three,
-  .people-grid--members,
-  .people-grid--alumni,
-  .people-grid--assistants {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .site-footer__inner {
     grid-template-columns: minmax(0, 1fr) minmax(220px, 0.7fr);
   }
@@ -1669,11 +1522,7 @@ button:focus-visible,
   }
 
   .card-grid--two,
-  .card-grid--three,
-  .field-region-grid,
-  .people-grid--members,
-  .people-grid--alumni,
-  .people-grid--assistants {
+  .field-region-grid {
     grid-template-columns: 1fr;
   }
 
