@@ -24,7 +24,7 @@ const themeIcons = [Scale, GraduationCap, PawPrint, Landmark, ShieldCheck];
             const Icon = themeIcons[index];
             return (
             <article class={`theme-card theme-card--${index + 1}`}>
-              <Icon class="theme-card__icon" aria-hidden="true" size={24} strokeWidth={1.8} />
+              <Icon class="theme-card__icon" aria-hidden="true" size={24} />
               <h3>{theme.title}</h3>
               <p class="small-label">Keywords</p>
               <p>{theme.keywords}</p>

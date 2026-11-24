@@ -51,14 +51,14 @@ const contactEmails = [
                 rel={link.url ? "noopener noreferrer" : undefined}
                 class="profile-link"
               >
-                <Icon aria-hidden="true" size={16} strokeWidth={1.8} />
+                <Icon aria-hidden="true" size={16} />
                 <span>{link.label}</span>
               </a>
             );
           })}
         </div>
         <div class="profile-contact" aria-label="Contact emails">
-          <Mail aria-hidden="true" size={16} strokeWidth={1.8} />
+          <Mail aria-hidden="true" size={16} />
           {contactEmails.map((email, index) => (
             <>
               <a href={`mailto:${email}`} class="profile-email">{email}</a>
