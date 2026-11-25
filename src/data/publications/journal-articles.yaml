@@ -3,7 +3,7 @@
 title: "Journal Articles"
 order: 3
 items:
-  - type: "Article"
+  - type: "Articles"
     languages: ["English"]
     title: "Maoist Pigs: Swine, Communes, and the State in Rural China, 1949–1976"
     details:
@@ -12,7 +12,7 @@ items:
       - label: "View Article"
         url: "https://doi.org/10.1215/00219118-12257581"
 
-  - type: "Article"
+  - type: "Articles"
     languages: ["English"]
     title: "Rabbit Spleen and Medicinal Herbs: Animal Infectious Diseases, Grassroots Communes, and the State in Maoist China"
     details:
@@ -21,7 +21,7 @@ items:
       - label: "View Article"
         url: "https://muse.jhu.edu/pub/1/article/937507"
 
-  - type: "Article"
+  - type: "Articles"
     languages: ["English"]
     title: "Decolonization and Self-Reflection: Teaching the Korean History of Science in South Korea"
     details:
@@ -30,7 +30,7 @@ items:
       - label: "View Article"
         url: "https://online.ucpress.edu/hsns/article-abstract/54/1/121/200191/Decolonization-and-Self-ReflectionTeaching-the?redirectedFrom=fulltext"
 
-  - type: "Article"
+  - type: "Articles"
     languages: ["English"]
     title: "Dialectical Materialism Serves Voluntarist Productivism: The Epistemic Foundation of Lysenkoism in Socialist China and North Vietnam"
     details:
@@ -39,7 +39,7 @@ items:
       - label: "View Article"
         url: "https://link.springer.com/article/10.1007/s10739-021-09652-7"
 
-  - type: "Article"
+  - type: "Articles"
     languages: ["English"]
     title: "Conference Report on the Mr. Science, May Fourth, and Modern China Workshop"
     details:
@@ -48,7 +48,7 @@ items:
       - label: "View Article"
         url: "http://thepacificcircle.com/wp-content/uploads/Bulletin-of-the-Pacific-Circle-43-October-2019.pdf"
 
-  - type: "Article"
+  - type: "Articles"
     languages: ["Korean"]
     title: "Reading the “Spring of Science” in China’s Long 1980s: From the Masses to the Technocrats, from Revolution to Systems, from Self-Reliance to Linking Up"
     koreanTitle: "장기 1980년대 중국 ‘과학의 봄’ 독법: 인민에서 인재로, 혁명에서 시스템으로, 자력갱생에서 접궤로"
@@ -58,7 +58,7 @@ items:
       - label: "View Article"
         url: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003380191"
 
-  - type: "Article"
+  - type: "Articles"
     languages: ["Korean"]
     title: "The Development of Modern East Asian History of Science and Technology and the Prospects for Korean Studies"
     koreanTitle: "근현대 동아시아 과학기술사의 전개와 한국학의 전망"
@@ -68,7 +68,7 @@ items:
       - label: "View Article"
         url: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003344073"
 
-  - type: "Article"
+  - type: "Articles"
     languages: ["Korean"]
     title: "What Is Animal History?: On Recent Anglophone Historiography"
     koreanTitle: "동물사의 문제의식과 서사 전략: 영어권 연구 동향을 중심으로"
@@ -78,7 +78,7 @@ items:
       - label: "View Article"
         url: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003192340"
 
-  - type: "Article"
+  - type: "Articles"
     languages: ["Korean"]
     title: "Making a “Korean Caltech”: Physicist Hogil Kim, Yonam Institute of Technology, and Pohang University of Science and Technology, 1972-1994"
     koreanTitle: "대학교수들을 위한 연구 “왕국” 만들기: 물리학자 김호길의 연암공학원 및 포항공과대학 구상과 건학"
@@ -88,7 +88,7 @@ items:
       - label: "View Article"
         url: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003076772"
 
-  - type: "Article"
+  - type: "Articles"
     languages: ["Korean"]
     title: "Peanut Hulls, Swine Feces, and Silver Carps: Eating, Excreting, and Communal Metabolism in 1950s Guangxi"
     koreanTitle: "코뮨은 무엇으로 사는가?―1950년대 중국 광시 지역 농촌 공동체의 물질대사"
@@ -98,7 +98,7 @@ items:
       - label: "View Article"
         url: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003021872"
 
-  - type: "Article"
+  - type: "Articles"
     languages: ["Korean"]
     title: "In a Spectrum between Self-Denial and Self-Assertion: A Reading of the Histories of Science, Technology, and Medicine in Twentieth-Century China"
     koreanTitle: "20세기 중국 과학사·기술사·의학사 독법(讀法): 자기 부정과 자기 재생산을 양극으로 하는 하나의 스펙트럼 안에서"
@@ -108,7 +108,7 @@ items:
       - label: "View Article"
         url: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002731371"
 
-  - type: "Article"
+  - type: "Articles"
     languages: ["Korean"]
     title: "Scientific Needles for Livestock Animals in Communes: The Birth of Traditional Chinese Veterinary Medicine in Maoist China, 1956-1963"
     koreanTitle: "집체(集體)의 가축을 위한 침술의 과학: 마오쩌둥 시기 중수의학의 탄생, 1956-1963"

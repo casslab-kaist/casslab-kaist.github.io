@@ -34,7 +34,7 @@ Each file in `src/data/publications/` is one section of the Publications page. T
 
 | Field | Required | What it is |
 | :--- | :--- | :--- |
-| `type` | yes | The tag in the top left of the card, such as `"Article"`, `"Book"`, `"Op-ed"`. |
+| `type` | yes | The tag in the top left of the card, such as `"Articles"`, `"Book"`, `"Op-ed"`. |
 | `languages` | yes | One or more badges in the top right: `["English"]`, `["Korean"]`, `["Korean", "English"]`. A badge that contains "Korean" gets the Korean color. |
 | `title` | yes | The title. For a work with only a Korean title, put the Korean title here. |
 | `koreanTitle` | no | The Korean title of a work that also has an English one. It is shown after the English title in square brackets. |
@@ -46,7 +46,7 @@ Copy the example closest to what you're adding into the right file, then replace
 **Journal article** (in `journal-articles.yaml`):
 
 ```yaml
-  - type: "Article"
+  - type: "Articles"
     languages: ["English"]
     title: "Article Title: Subtitle"
     details:
@@ -59,7 +59,7 @@ Copy the example closest to what you're adding into the right file, then replace
 **Korean article with an English title**:
 
 ```yaml
-  - type: "Article"
+  - type: "Articles"
     languages: ["Korean"]
     title: "English Title of the Article"
     koreanTitle: "한국어 논문 제목"

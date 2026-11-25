@@ -9,17 +9,17 @@ homePortrait: "/pi-portrait.png"
 
 # Short summary shown on the home page. One list item per paragraph.
 homeIntro:
-  - "Jongsik Christian Yi is an Assistant Professor in the Graduate School of Science and Technology Policy at KAIST, specializing in the history of science and medicine, science and technology studies of China and Vietnam, and animal and environmental studies. His book on veterinary workers and nonhuman animals in Mao-era China, More-Than People's Communes, is under contract with the University of Chicago Press."
+  - "Jongsik Christian Yi is an Assistant Professor in the Graduate School of Science and Technology Policy at KAIST, specializing in the history of science and medicine, science and technology studies of China and Vietnam, and animal and environmental studies. His research draws on perspectives from history, STS, policy studies, and multispecies scholarship to examine how science and technology have shaped societies, environments, and life across Asia."
 
 # Biography at the top of the PI page. One list item per paragraph.
 bio:
-  - "Dr. Jongsik Christian Yi is an Assistant Professor in the Graduate School of Science and Technology Policy at KAIST. His research and teaching focus on the history and policy of science and technology in modern China. He also works on the history of science, science and technology studies (STS), and science and technology policy in Korea, Japan, and Vietnam, and on medical humanities, human–animal relations, and global higher education policy."
+  - "Dr. Jongsik Christian Yi is an Assistant Professor in the Graduate School of Science and Technology Policy at KAIST. His research and teaching focus on the history and policy of science and technology in modern China, while also encompassing the history of science, science and technology studies (STS), and science and technology policy in East Asia (Korea and Japan) and Southeast Asia (Vietnam). His broader interests also include medical humanities, human–animal relations, and global higher education policy."
 
 # "Publications & Academic Service" section. One list item per paragraph.
 # Wrap book and journal titles in <em>...</em> to show them in italics.
 longBio:
   - "He is the author of <em>More-Than People's Communes: Veterinary Workers and Nonhuman Animals in Mao-Era China</em> (under contract with the University of Chicago Press) and <em>Animal History: The Birth of the Modern People Who Love and Hate Animals</em> (in Korean, East Asia Books). He has also translated into Korean Victor Seow's <em>Carbon Technocracy</em>, Warwick Anderson's <em>Spectacles of Waste</em>, Sigrid Schmalzer's <em>Red Revolution, Green Revolution</em>, and Loren Graham's <em>Lysenko's Ghost</em>, among others."
-  - "His articles have appeared in journals including <em>The Journal of Asian Studies</em>, <em>The Bulletin of the History of Medicine</em>, <em>Historical Studies in the Natural Sciences</em>, and <em>The Journal of the History of Biology</em>. He is an associate editor of <em>East Asian Science, Technology, and Medicine</em> and <em>The Korean Journal for the History of Science</em>. He also serves on the boards of the Korea Foundation for Women In Science, Engineering and Technology (WISET); the Korean History of Science Society; and the Korean Association for Cold War Studies."
+  - "His scholarly articles have appeared in leading international journals, including <em>The Journal of Asian Studies</em>, <em>The Bulletin of the History of Medicine</em>, <em>Historical Studies in the Natural Sciences</em>, and <em>The Journal of the History of Biology</em>. Professor Yi is currently an associate editor of <em>East Asian Science, Technology, and Medicine</em> and <em>The Korean Journal for the History of Science</em>. He also serves on the boards of the Korea Foundation for Women In Science, Engineering and Technology (WISET); the Korean History of Science Society; and the Korean Association for Cold War Studies."
 
 # Buttons under the biography. icon is one of: building, graduation-cap, id-card.
 links:

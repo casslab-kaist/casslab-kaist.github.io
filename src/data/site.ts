@@ -22,8 +22,7 @@ export const assetSources = {
 };
 
 export const labIntro = [
-  "The CASS Lab at the KAIST Graduate School of Science and Technology Policy (KAIST STP) works in the history of science, science and technology studies (STS), and science and technology policy. We study how China, Japan, and Korea used science and technology to grow their economies, the conditions and limits of that “success,” and whether its costs have been pushed onto Southeast Asia, South Asia, and the Pacific.",
-  "Current topics include research universities and STEM higher education, research security, technocrats in democracies, the veterinary humanities, and the Great Acceleration in the Anthropocene.",
+  "Based at KAIST STP, the CASS Lab explores how scientific knowledge and technological systems shape and are shaped by culture, politics, power, policy, and everyday life across China, Japan, Korea, Southeast Asia, the Pacific, and beyond. We aim to engage with the rise of Chinese and Asian science and technology, and to develop critical, historically grounded perspectives on science and technology from Asia, asking how Asian experiences can help us better understand the past, present, and future of science in society."
 ];
 
 export const studyAreas = [
