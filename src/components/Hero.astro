@@ -20,23 +20,3 @@ const { title, image, imageSource } = Astro.props;
   </div>
 </section>
 
-<script>
-  // Parallax: the background image moves at a fraction of the scroll speed.
-  // Lower SPEED means a slower-moving image.
-  const SPEED = 0.35;
-  const hero = document.querySelector<HTMLElement>(".hero");
-  const image = hero?.querySelector<HTMLElement>(".hero__image");
-
-  if (hero && image) {
-    window.addEventListener(
-      "scroll",
-      () => {
-        const rect = hero.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
-          image.style.transform = `translate3d(0, ${-rect.top * SPEED}px, 0)`;
-        }
-      },
-      { passive: true },
-    );
-  }
-</script>
