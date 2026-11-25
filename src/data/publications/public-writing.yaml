@@ -3,6 +3,36 @@
 title: "Public Writings"
 order: 6
 items:
+  - type: "Public Talk"
+    languages: ["Korean"]
+    title: "On Red Revolution, Green Revolution (Sigrid Schmalzer 2016)"
+    details:
+      - "Jongsik Christian Yi. Seoul National University Asia Center, November 24, 2026."
+    links:
+      - label: "View Online"
+        url: "https://www.youtube.com/watch?v=az3Fy9hgaH8&t=61s"
+
+  - type: "Interview"
+    languages: ["Korean"]
+    title: "“美 제재가 보증수표 됐다” 딥시크 낳은 中 거국체제의 비밀"
+    details:
+      - "Interview with The JoongAng Daily. November 18, 2026."
+    links:
+      - label: "View Online"
+        url: "https://www.joongang.co.kr/article/25479409"
+
+  - type: "Op-ed"
+    languages: ["Korean", "Japanese"]
+    title: "70 Years of Chinese/American Scientists"
+    koreanTitle: "미중 패권 경쟁 숨은 주역, 범중국계 과학기술인의 70년"
+    details:
+      - "Jongsik Christian Yi. Hankyoreh, November 13, 2026."
+    links:
+      - label: "View Online (Korean)"
+        url: "https://www.hani.co.kr/arti/opinion/column/1287144.html"
+      - label: "View Online (Japanese)"
+        url: "https://japan.hani.co.kr/arti/opinion/57666.html"
+
   - type: "Public Essay"
     languages: ["Korean"]
     title: "Excretion, Aesthetics, and Colonialism"
@@ -22,6 +52,15 @@ items:
     links:
       - label: "View Online"
         url: "https://www.hani.co.kr/arti/opinion/column/1282670.html"
+
+  - type: "Interview"
+    languages: ["Korean"]
+    title: "중국의 과학자 우상화 현상에 대하여"
+    details:
+      - "Interview with KBS KLAB. September 18, 2026."
+    links:
+      - label: "View Online"
+        url: "https://www.youtube.com/watch?v=EbTHHvG3D60&t=7s"
 
   - type: "Op-ed"
     languages: ["Korean"]
