@@ -1175,6 +1175,13 @@ a:focus-visible {
   color: var(--color-accent);
 }
 
+.publication-card__languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: flex-end;
+}
+
 .publication-card h3 {
   color: var(--color-navy);
   font-size: 1rem;
@@ -1197,6 +1204,12 @@ a:focus-visible {
   margin: 0;
 }
 
+.publication-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.25rem;
+}
+
 .publication-action {
   align-items: center;
   color: var(--color-navy);
@@ -1204,7 +1217,6 @@ a:focus-visible {
   font-size: 0.9rem;
   font-weight: 600;
   gap: 0.18rem;
-  justify-self: start;
   line-height: 1.4;
   margin-top: 0.65rem;
   text-decoration: underline;

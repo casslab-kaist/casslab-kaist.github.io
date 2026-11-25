@@ -1,0 +1,52 @@
+# Book Chapters on the Publications page (/publications/#book-chapters).
+# Entries appear in the order listed. See EDITING.md for how to add one.
+title: "Book Chapters"
+order: 2
+items:
+  - type: "Book Chapter"
+    languages: ["English"]
+    title: "Lyuh Woon-hyung and Khüree the City of Red Giant"
+    details:
+      - "In Overlapping Borderlands, eds. Loretta Kim and Anran Wang."
+      - "Jongsik Christian Yi (work in progress)."
+    # TODO: add a link to the publisher's page once there is one.
+
+  - type: "Book Chapter"
+    languages: ["English"]
+    title: "Pig Breeding and Sexual Taboos in the Early People’s Republic"
+    details:
+      - "In China's Environmental History: A Reader, eds. Brian Lander and Peter Lavelle. Columbia University Press."
+      - "Jongsik Christian Yi (forthcoming in December 2026)."
+    links:
+      - label: "View Publisher Site"
+        url: "https://cup.columbia.edu/book/chinas-environmental-history/9780231219662/"
+
+  - type: "Book Chapter"
+    languages: ["English"]
+    title: "Possibilities and Limitations of Mass Science: Hydrobiologist Nie Dashu and the Making of Knowledge on Fish Diseases Before the Great Leap"
+    details:
+      - "In A Revolution Across Arts and Sciences: Participatory Knowledge Production in China’s Great Leap Forward, eds. Christine Ho and Sigrid Schmalzer. Hong Kong University Press."
+      - "Jongsik Christian Yi. Hong Kong University Press, 2026."
+    links:
+      - label: "View Publisher Site"
+        url: "https://hkupress.hku.hk/Subject/history?product_id=1749&limit=20"
+
+  - type: "Book Chapter"
+    languages: ["Korean"]
+    title: "Animals, Environments, and the History of Science in Korea"
+    koreanTitle: "동물, 환경, 그리고 한국 과학사"
+    details:
+      - "Manyong Moon, Sang-ho Ro, Jongsik Christian Yi, et al. Sol Science, 2025."
+    links:
+      - label: "View Publisher Site"
+        url: "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=368905039"
+
+  - type: "Book Chapter"
+    languages: ["Korean"]
+    title: "The Structure of the Long Cold War and Its Knowledge Apparatus"
+    koreanTitle: "장기 냉전 구조와 지식 기제"
+    details:
+      - "Donghyuk Kim, Jongsik Christian Yi, et al. GIST Press, 2025."
+    links:
+      - label: "View Publisher Site"
+        url: "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=364880372&start=slayer"
