@@ -1,24 +1,21 @@
 ---
-interface Offering {
-  term: string;
-  role: string;
-  evaluation?: string;
-  award?: string;
-}
-
 interface Props {
-  title: string;
-  offerings: Offering[];
+  course: {
+    title: string;
+    koreanTitle?: string;
+    offerings: { term: string; role: string; evaluation?: string; award?: string }[];
+  };
 }
 
-const { title, offerings } = Astro.props;
+const { course } = Astro.props;
+const title = course.koreanTitle ? `${course.title} [${course.koreanTitle}]` : course.title;
 ---
 
 <article class="course-card">
   <h3>{title}</h3>
   <div class="course-card__offerings">
     {
-      offerings.map((offering) => (
+      course.offerings.map((offering) => (
         <div class="course-offering">
           <div>
             <p class="course-offering__term">{offering.term}</p>

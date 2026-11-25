@@ -1,0 +1,14 @@
+# Current Projects on the Research page (/research/).
+# Projects appear in the order listed. See EDITING.md.
+projects:
+  - title: "Basic Research for the Founding of the Global Research Security Center"
+    fundingAgency: "Ministry of Science and ICT, Republic of Korea"
+    duration: "2026 - 2028"
+
+  - title: "Study of the Great Acceleration in the Anthropocene"
+    fundingAgency: "National Research Foundation of Korea"
+    duration: "2025 - 2030"
+
+  - title: "Research on the History and Policies of Chinese STEM-Specialized Universities"
+    fundingAgency: "KAIST"
+    duration: "2025 - 2028"

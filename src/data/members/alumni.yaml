@@ -1,0 +1,13 @@
+# Alumni on the Members page (/members/#alumni).
+# Members appear in the order listed. See EDITING.md for how to add one.
+title: "Alumni"
+order: 4
+members: []
+# To add someone, replace "members: []" above with a list like this:
+# members:
+#   - name: "Full Name"
+#     nativeName: "한글 이름"
+#     program: "MS"
+#     since: "Aug. 2025"
+#     until: "Aug. 2027"
+#     detail: "Current position"
