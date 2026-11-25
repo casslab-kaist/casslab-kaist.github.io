@@ -17,8 +17,10 @@ npm run preview   # serve the built dist/ folder
 
 | Path | What it holds |
 | :--- | :--- |
-| `src/data/publications.ts` | The publication list, grouped into sections |
-| `src/data/site.ts` | Most other content: navigation, lab intro, FAQ, research themes, projects, PI profile, members, teaching |
+| `src/data/publications/`, `src/data/members/` | Publications and members as YAML, one file per page section |
+| `src/data/pi.yaml`, `src/data/projects.yaml` | The PI page and the Research page's current projects |
+| `src/data/site.ts` | Navigation, image paths, lab intro, About page lists and FAQ, research themes |
+| `src/content.config.ts` | The schema each YAML file is checked against when the site builds |
 | `src/pages/` | One file per page. The file name is the URL: `members.astro` is `/members/` |
 | `src/layouts/Layout.astro` | The `<head>`, header, and footer shared by every page |
 | `src/components/` | Pieces of markup used by the pages |
@@ -27,14 +29,9 @@ npm run preview   # serve the built dist/ folder
 
 ## Updating content
 
-Most updates only touch the two data files in `src/data/`. Copy an existing entry, paste it next to the original, and change its fields. Entries appear on the page in the order they are listed.
+Publications, members, projects, and the PI page are edited in the YAML files in `src/data/`, without touching any page or component. [EDITING.md](EDITING.md) explains each file and has copy-paste examples for each kind of publication.
 
-- **Publication**: add an entry to the `items` list of the right section in `src/data/publications.ts`. `linkLabel` and `url` are optional; set both to show a link.
-- **Member**: add an entry to `phdStudents`, `msStudents`, `researchAssistants`, or `alumni` in `src/data/site.ts`. The comments on `LabMember` in that file explain each field.
-
-Some text is still written directly in the page files, for example the longer biography on `src/pages/pi.astro`.
-
-Run `npm run build` before you push. It stops with an error if a data file has a syntax mistake, such as a missing comma or quotation mark.
+Run `npm run build` before you push. It checks every YAML file and stops with an error naming the file and field if an entry is missing a required field, has a misspelled field, or has a value in the wrong form.
 
 ## Deployment
 
