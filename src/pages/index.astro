@@ -24,7 +24,6 @@ const pi = (await getEntry("pi", "pi"))!.data;
     <section class="page-section" aria-labelledby="about-home-heading">
       <div class="section-shell split-section">
         <div>
-          <p class="section-kicker">About</p>
           <h2 id="about-home-heading">About the Lab</h2>
         </div>
         <div class="rich-copy text-panel">
@@ -40,7 +39,6 @@ const pi = (await getEntry("pi", "pi"))!.data;
           <img src={pi.homePortrait} alt="Portrait of Jongsik Christian Yi" width="341" height="512" />
         </figure>
         <div class="rich-copy">
-          <p class="section-kicker">Director, CASS Lab</p>
           <h2 id="pi-home-heading">Principal Investigator</h2>
           <h3>{pi.name}</h3>
           {pi.homeIntro.map((paragraph) => <p>{paragraph}</p>)}

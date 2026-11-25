@@ -33,7 +33,6 @@ const themeIcons = [Scale, GraduationCap, PawPrint, Landmark, ShieldCheck];
           <article class="theme-card theme-card--core">
             <img src="/hub.svg" alt="" class="theme-card__hub" aria-hidden="true" />
             <h3>Chinese &amp; Asian Science and Technology</h3>
-            <p class="small-label">Core Research Hub</p>
           </article>
         </div>
       </div>
@@ -41,13 +40,12 @@ const themeIcons = [Scale, GraduationCap, PawPrint, Landmark, ShieldCheck];
 
     <section class="page-section page-section--warm" aria-labelledby="projects-heading">
       <div class="section-shell">
-        <div class="section-heading section-heading--row">
+        <div class="section-heading">
           <h2 id="projects-heading">Current Projects</h2>
-          <p class="small-label">Active Grants</p>
         </div>
         <div class="project-list">
           {projects.map((project) => (
-            <article class="project-card project-card--summary">
+            <article class="project-card">
               <div class="project-card__body">
                 <h3>{project.title}</h3>
               </div>
