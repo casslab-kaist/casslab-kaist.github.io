@@ -1,9 +1,9 @@
 ---
 import { Mail } from "@lucide/astro";
-import type { LabMember } from "../data/site";
+import type { Member } from "../content.config";
 
 interface Props {
-  members: LabMember[];
+  members: Member[];
 }
 
 const { members } = Astro.props;

@@ -1,46 +1,31 @@
 ---
+import { getEntry } from "astro:content";
 import { Building2, GraduationCap, IdCard, Mail } from "@lucide/astro";
 import CourseCard from "../components/CourseCard.astro";
 import TimelineList from "../components/TimelineList.astro";
 import Layout from "../layouts/Layout.astro";
-import {
-  appointments,
-  assets,
-  awards,
-  education,
-  galleryImages,
-  piProfile,
-  teachingRecords,
-} from "../data/site";
 
-const profileLinks = [
-  { label: "KAIST Profile", icon: Building2, url: "https://stp.kaist.ac.kr/FacultyFull_time_Professor/view/id/120" },
-  { label: "Harvard Profile", icon: GraduationCap, url: "https://histsci.fas.harvard.edu/people/jongsik-christian-yi" },
-  { label: "ORCID", icon: IdCard, url: "https://orcid.org/0000-0001-5660-1065" },
-];
-
-const contactEmails = [
-  "jongsikyi@kaist.ac.kr",
-  "dangs0713@gmail.com",
-];
+// Everything on this page comes from src/data/pi.yaml.
+const pi = (await getEntry("pi", "pi"))!.data;
+const linkIcons = { building: Building2, "graduation-cap": GraduationCap, "id-card": IdCard };
 ---
 
 <Layout title="Jongsik Christian Yi | CASS Lab" description="Principal Investigator profile for CASS Lab at KAIST STP.">
   <main id="content">
     <section class="profile-hero" aria-labelledby="pi-title">
       <figure class="profile-hero__portrait">
-        <img src={assets.piPortrait} alt="Portrait of Jongsik Christian Yi" width="341" height="512" />
+        <img src={pi.portrait} alt="Portrait of Jongsik Christian Yi" width="341" height="512" />
       </figure>
       <div class="profile-hero__copy">
-        <h1 id="pi-title">{piProfile.name}</h1>
-        <p class="profile-hero__title">{piProfile.title}</p>
-        <p class="profile-hero__appointment">{piProfile.appointment}</p>
+        <h1 id="pi-title">{pi.name}</h1>
+        <p class="profile-hero__title">{pi.title}</p>
+        <p class="profile-hero__appointment">{pi.appointment}</p>
         <div class="rich-copy">
-          {piProfile.bio.map((paragraph) => <p>{paragraph}</p>)}
+          {pi.bio.map((paragraph) => <p>{paragraph}</p>)}
         </div>
         <div class="profile-links" aria-label="Profile links">
-          {profileLinks.map((link) => {
-            const Icon = link.icon;
+          {pi.links.map((link) => {
+            const Icon = linkIcons[link.icon];
             return (
               <a href={link.url} target="_blank" rel="noopener noreferrer" class="profile-link">
                 <Icon aria-hidden="true" size={16} />
@@ -51,10 +36,10 @@ const contactEmails = [
         </div>
         <div class="profile-contact" aria-label="Contact emails">
           <Mail aria-hidden="true" size={16} />
-          {contactEmails.map((email, index) => (
+          {pi.emails.map((email, index) => (
             <>
               <a href={`mailto:${email}`} class="profile-email">{email}</a>
-              {index < contactEmails.length - 1 && (
+              {index < pi.emails.length - 1 && (
                 <span class="profile-contact__separator" aria-hidden="true">•</span>
               )}
             </>
@@ -69,21 +54,7 @@ const contactEmails = [
           <h2 id="scholarship-heading">Publications & Academic Service</h2>
         </div>
         <div class="rich-copy pi-long-bio">
-          <p>
-            He is the author of <em>More-Than People's Communes: Veterinary Workers and Nonhuman Animals in Mao-Era China</em>
-            (under contract with the University of Chicago Press) and <em>Animal History: The Birth of the Modern People
-            Who Love and Hate Animals</em> (in Korean, East Asia Books). He has also translated into Korean Victor Seow's
-            <em>Carbon Technocracy</em>, Warwick Anderson's <em>Spectacles of Waste</em>, Sigrid Schmalzer's
-            <em>Red Revolution, Green Revolution</em>, and Loren Graham's <em>Lysenko's Ghost</em>, among others.
-          </p>
-          <p>
-            His scholarly articles have appeared in leading international journals, including <em>The Journal of Asian
-            Studies</em>, <em>The Bulletin of the History of Medicine</em>, <em>Historical Studies in the Natural
-            Sciences</em>, and <em>The Journal of the History of Biology</em>. Professor Yi is currently an associate
-            editor of <em>East Asian Science, Technology, and Medicine</em> and <em>The Korean Journal for the History of
-            Science</em>. He also serves on the boards of the Korea Foundation for Women In Science, Engineering and
-            Technology (WISET); the Korean History of Science Society; and the Korean Association for Cold War Studies.
-          </p>
+          {pi.longBio.map((paragraph) => <p set:html={paragraph} />)}
         </div>
       </div>
     </section>
@@ -93,7 +64,7 @@ const contactEmails = [
         <div class="section-heading">
           <h2 id="appointments-heading">Academic Appointments</h2>
         </div>
-        <TimelineList items={appointments} highlightFirst />
+        <TimelineList items={pi.appointments} highlightFirst />
       </div>
     </section>
 
@@ -102,7 +73,7 @@ const contactEmails = [
         <div class="section-heading">
           <h2 id="education-heading">Education</h2>
         </div>
-        <TimelineList items={education} />
+        <TimelineList items={pi.education} />
       </div>
     </section>
 
@@ -112,7 +83,7 @@ const contactEmails = [
           <h2 id="interests-heading">Teaching</h2>
         </div>
         <div class="teaching-records">
-          {teachingRecords.map((group) => {
+          {pi.teaching.map((group) => {
             const headingId = `${group.institution.toLowerCase().replaceAll(" ", "-")}-pi-heading`;
             return (
               <section class="course-group" aria-labelledby={headingId}>
@@ -120,7 +91,7 @@ const contactEmails = [
                   <h3 id={headingId}>{group.institution}</h3>
                 </div>
                 <div class="course-list">
-                  {group.courses.map((course) => <CourseCard title={course.title} offerings={course.offerings} />)}
+                  {group.courses.map((course) => <CourseCard course={course} />)}
                 </div>
               </section>
             );
@@ -135,13 +106,13 @@ const contactEmails = [
           <h2 id="awards-heading">Awards, Fellowships, and Grants (Selected)</h2>
         </div>
         <div class="award-list">
-          {awards.map(([title, organization, year]) => (
+          {pi.awards.map((award) => (
             <article class="award-item">
               <div>
-                <h3>{title}</h3>
-                <p>{organization}</p>
+                <h3>{award.title}</h3>
+                <p>{award.organization}</p>
               </div>
-              <span>{year}</span>
+              <span>{award.year}</span>
             </article>
           ))}
         </div>
@@ -154,9 +125,9 @@ const contactEmails = [
           <h2 id="gallery-heading">Gallery</h2>
         </div>
         <div class="gallery-grid">
-          {galleryImages.map((image) => (
+          {pi.gallery.map((photo) => (
             <figure>
-              <img src={image.src} alt={image.alt} />
+              <img src={photo.image} alt={photo.alt} />
             </figure>
           ))}
         </div>

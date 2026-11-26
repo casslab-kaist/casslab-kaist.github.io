@@ -1,0 +1,34 @@
+# Research Assistants on the Members page (/members/#research-assistants).
+# Members appear in the order listed. See EDITING.md for how to add one.
+title: "Research Assistants"
+order: 3
+members:
+  - name: "Kyungbin Koh"
+    nativeName: "고경빈"
+    program: "PhD"
+    detail: "KAIST STP"
+
+  - name: "Chae-un Yim"
+    nativeName: "임채은"
+    program: "PhD"
+    detail: "KAIST GGGS"
+
+  - name: "Taeyoon Claire Kim"
+    nativeName: "김태윤"
+    program: "MS"
+    detail: "KAIST STP"
+
+  - name: "Junseok Lee"
+    nativeName: "이준석"
+    program: "BS"
+    detail: "KAIST AI Computing"
+
+  - name: "Sihyeong Song"
+    nativeName: "송시형"
+    program: "BS"
+    detail: "KAIST Biology"
+
+  - name: "Minsol Bang"
+    nativeName: "방민솔"
+    program: "BS"
+    detail: "KAIST Chemistry"

@@ -1,0 +1,18 @@
+# PhD Students on the Members page (/members/#phd-students).
+# Members appear in the order listed. See EDITING.md for how to add one.
+title: "PhD Students"
+order: 1
+members:
+  - name: "Haneul Lee"
+    nativeName: "이하늘"
+    email: "hnlee@kaist.ac.kr"
+    program: "PhD"
+    since: "Feb. 2027"
+    detail: "Multispecies STS, Animal History"
+
+  - name: "Chaeri Yang"
+    nativeName: "양채리"
+    email: "ychaeri@kaist.ac.kr"
+    program: "PhD"
+    since: "Feb. 2027"
+    detail: "History of science in modern China"

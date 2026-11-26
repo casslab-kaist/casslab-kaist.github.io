@@ -1,11 +1,15 @@
 ---
+import { getCollection } from "astro:content";
 import { ArrowUp } from "@lucide/astro";
 import Hero from "../components/Hero.astro";
 import PublicationCard from "../components/PublicationCard.astro";
 import Layout from "../layouts/Layout.astro";
-import { publicationSections } from "../data/publications";
 import { assets } from "../data/site";
 
+// One section per file in src/data/publications/, sorted by each file's `order`.
+const publicationSections = (await getCollection("publications"))
+  .sort((a, b) => a.data.order - b.data.order)
+  .map((entry) => ({ id: entry.id, ...entry.data }));
 const totalPublicationCount = publicationSections.flatMap((section) => section.items).length;
 ---
 
@@ -21,7 +25,7 @@ const totalPublicationCount = publicationSections.flatMap((section) => section.i
         <nav aria-label="Publication categories">
           {publicationSections.map((section, index) => (
             <a class:list={["category-link", index === 0 && "is-active"]} data-category-link={section.id} href={`#${section.id}`}>
-              {section.navLabel}
+              {section.title}
             </a>
           ))}
         </nav>

@@ -1,15 +1,14 @@
 ---
+import { getCollection } from "astro:content";
 import Hero from "../components/Hero.astro";
 import MemberList from "../components/MemberList.astro";
 import Layout from "../layouts/Layout.astro";
-import { alumni, assets, msStudents, phdStudents, researchAssistants } from "../data/site";
+import { assets } from "../data/site";
 
-const memberGroups = [
-  { id: "phd-students", title: "PhD Students", members: phdStudents },
-  { id: "ms-students", title: "MS Students", members: msStudents },
-  { id: "research-assistants", title: "Research Assistants", members: researchAssistants },
-  { id: "alumni", title: "Alumni", members: alumni },
-];
+// One group per file in src/data/members/, sorted by each file's `order`.
+const memberGroups = (await getCollection("members"))
+  .sort((a, b) => a.data.order - b.data.order)
+  .map((entry) => ({ id: entry.id, ...entry.data }));
 ---
 
 <Layout title="Members | CASS Lab" description="PhD and MS students, research assistants, and alumni of CASS Lab.">

@@ -1,0 +1,289 @@
+# Public Writings on the Publications page (/publications/#public-writing).
+# Entries appear in the order listed. See EDITING.md for how to add one.
+title: "Public Writings"
+order: 6
+items:
+  - type: "Public Talk"
+    languages: ["Korean"]
+    title: "On Red Revolution, Green Revolution (Sigrid Schmalzer 2016)"
+    details:
+      - "Jongsik Christian Yi. Seoul National University Asia Center, November 24, 2026."
+    links:
+      - label: "View Online"
+        url: "https://www.youtube.com/watch?v=az3Fy9hgaH8&t=61s"
+
+  - type: "Interview"
+    languages: ["Korean"]
+    title: "“美 제재가 보증수표 됐다” 딥시크 낳은 中 거국체제의 비밀"
+    details:
+      - "Interview with The JoongAng Daily. November 18, 2026."
+    links:
+      - label: "View Online"
+        url: "https://www.joongang.co.kr/article/25479409"
+
+  - type: "Op-ed"
+    languages: ["Korean", "Japanese"]
+    title: "70 Years of Chinese/American Scientists"
+    koreanTitle: "미중 패권 경쟁 숨은 주역, 범중국계 과학기술인의 70년"
+    details:
+      - "Jongsik Christian Yi. Hankyoreh, November 13, 2026."
+    links:
+      - label: "View Online (Korean)"
+        url: "https://www.hani.co.kr/arti/opinion/column/1287144.html"
+      - label: "View Online (Japanese)"
+        url: "https://japan.hani.co.kr/arti/opinion/57666.html"
+
+  - type: "Public Essay"
+    languages: ["Korean"]
+    title: "Excretion, Aesthetics, and Colonialism"
+    koreanTitle: "배설, 미학, 식민주의"
+    details:
+      - "Jongsik Christian Yi. Seoul Museum of Art Coral (SeMa Coral), October 26, 2026."
+    links:
+      - label: "View Online"
+        url: "https://semacoral.org/features/jongsik-christian-yi-excretion-aesthetics-and-colonialism"
+
+  - type: "Op-ed"
+    languages: ["Korean"]
+    title: "Chinese Engineers in the Gilded Cage"
+    koreanTitle: "중국 엘리트 엔지니어는 왜 스스로를 ‘인육전지’라 부를까"
+    details:
+      - "Jongsik Christian Yi. Hankyoreh, October 16, 2026."
+    links:
+      - label: "View Online"
+        url: "https://www.hani.co.kr/arti/opinion/column/1282670.html"
+
+  - type: "Interview"
+    languages: ["Korean"]
+    title: "중국의 과학자 우상화 현상에 대하여"
+    details:
+      - "Interview with KBS KLAB. September 18, 2026."
+    links:
+      - label: "View Online"
+        url: "https://www.youtube.com/watch?v=EbTHHvG3D60&t=7s"
+
+  - type: "Op-ed"
+    languages: ["Korean"]
+    title: "The Birth of Scientists Who Rule"
+    koreanTitle: "‘한자녀 정책’ 설계한 미사일 과학자… 통치의 자격을 묻다"
+    details:
+      - "Jongsik Christian Yi. Hankyoreh, September 10, 2026."
+    links:
+      - label: "View Online"
+        url: "https://www.hani.co.kr/arti/opinion/column/1277264.html"
+
+  - type: "Op-ed"
+    languages: ["Korean"]
+    title: "The Origins of Red Technocracy in China"
+    koreanTitle: "중국, ‘암묵의 계약’으로 갱신되는 엔지니어의 나라"
+    details:
+      - "Jongsik Christian Yi. Hankyoreh, August 15, 2026."
+    links:
+      - label: "View Online"
+        url: "https://www.hani.co.kr/arti/opinion/column/1272870.html"
+
+  - type: "Op-ed"
+    languages: ["Korean"]
+    title: "The Legacies of Fang Lizhi"
+    koreanTitle: "과학과 민주의 길, 팡리즈의 유산"
+    details:
+      - "Jongsik Christian Yi. Hankyoreh, July 17, 2026."
+    links:
+      - label: "View Online"
+        url: "https://www.hani.co.kr/arti/opinion/column/1268645.html"
+
+  - type: "Interview"
+    languages: ["Korean"]
+    title: "중국 남부 홍수 피해 키운 ‘자력갱생’ 치수 정책…류란저수지 제방 붕괴에 당국 초긴장"
+    details:
+      - "Interview with The Kyunghyang Shinmun. July 8, 2026."
+    links:
+      - label: "View Online"
+        url: "https://www.khan.co.kr/article/202607081740001?fbclid=IwY2xjawS7A1dleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeSOxj5DIcXevHJd8nqBbsmVmD1l5yTEN7dmwY7pRDbH722hnyiU5qO7e1T5U_aem_pyK4NcWPztML7xvwAx53rQ"
+
+  - type: "Op-ed"
+    languages: ["Korean"]
+    title: "What Do You Know about Qian Xuesen?"
+    koreanTitle: "중국 ‘로켓왕’ 첸쉐썬을 아십니까?"
+    details:
+      - "Jongsik Christian Yi. Hankyoreh, June 18, 2026."
+    links:
+      - label: "View Online"
+        url: "https://www.hani.co.kr/arti/opinion/column/1264250.html"
+
+  - type: "Op-ed"
+    languages: ["Korean"]
+    title: "After China’s Scientific Rise #1: Can Shanzhai Lift the China Dream?"
+    koreanTitle: "이종식의 중국 과학굴기 너머 01: ‘산자이’는 중국몽의 지렛대가 될까"
+    details:
+      - "Jongsik Christian Yi. Hankyoreh, May 22, 2026."
+    links:
+      - label: "View Online"
+        url: "https://www.hani.co.kr/arti/opinion/column/1259917.html"
+
+  - type: "Interview"
+    languages: ["Korean"]
+    title: "Documentary Insight: China Speed"
+    koreanTitle: "인재전쟁2: 1부 차이나 스피드"
+    details:
+      - "Interview with KBS 1TV. May 14, 2026."
+    links:
+      - label: "View Online"
+        url: "https://www.youtube.com/watch?v=0-nPEj6euio&t=101s"
+
+  - type: "Interview"
+    languages: ["Korean"]
+    title: "양자컴 교수에 교육부 맡겼다… ‘딥시크 쇼크’ 中 혁신의 비밀"
+    details:
+      - "Interview with The JoongAng Daily. January 21, 2026."
+    links:
+      - label: "View Online"
+        url: "https://www.joongang.co.kr/article/25398914"
+
+  - type: "Public Essay"
+    languages: ["Korean"]
+    title: "There Is No Such Thing as “Western Science”; Nor, Perhaps, Is There Chinese Science, Indian Science, or Korean Science"
+    koreanTitle: "서양과학은 없다, 어쩌면 중국과학, 인도과학, 한국과학도"
+    details:
+      - "Jongsik Christian Yi. University In & Out, January 18, 2026."
+    links:
+      - label: "View Online"
+        url: "https://www.unipress.co.kr/news/articleView.html?idxno=13877"
+
+  - type: "Interview"
+    languages: ["Korean"]
+    title: "‘빨리, 많이’ AI 인재 양성한다는 이 정부… 경제적 보상, 직업 안정성 등 과학자 존중받는 서사 필요"
+    koreanTitle: "마가와 굴기 넘어②"
+    details:
+      - "Interview with The Kyunghyang Shinmun. January 6, 2026."
+    links:
+      - label: "View Online"
+        url: "https://www.khan.co.kr/article/202601060600031"
+
+  - type: "Op-ed"
+    languages: ["Korean"]
+    title: "What Do Chinese Science and Technology Mean in South Korea After the ‘DeepSeek Shock’? (2)"
+    koreanTitle: "우리에게 중국 과학기술은 무엇인가? (2)"
+    details:
+      - "Jongsik Christian Yi. The JoongAng Daily, December 2, 2025."
+    links:
+      - label: "View Online"
+        url: "https://www.joongang.co.kr/article/25386766"
+
+  - type: "Op-ed"
+    languages: ["Korean"]
+    title: "What Do Chinese Science and Technology Mean in South Korea After the ‘DeepSeek Shock’? (1)"
+    koreanTitle: "우리에게 중국 과학기술은 무엇인가? (1)"
+    details:
+      - "Jongsik Christian Yi. The JoongAng Daily, November 25, 2025."
+    links:
+      - label: "View Online"
+        url: "https://www.joongang.co.kr/article/25384926"
+
+  - type: "Interview"
+    languages: ["Korean"]
+    title: "“넘어지면 어때요, 계속 발전할 건데” 로봇올림픽에서 본 중국 과학기술의 진짜 힘"
+    details:
+      - "Interview with The Kyunghyang Shinmun. August 17, 2025."
+    links:
+      - label: "View Online"
+        url: "https://www.khan.co.kr/article/202508171339001"
+
+  - type: "Public Essay"
+    languages: ["Korean"]
+    title: "What Do You Know about Lysenko?"
+    koreanTitle: "‘유사과학자’ 리센코를 아십니까?"
+    details:
+      - "Jongsik Christian Yi. Horizon: The Online Magazine of Korea Institute for Advanced Study (KIAS), May 15, 2025."
+    links:
+      - label: "View Online"
+        url: "https://horizon.kias.re.kr/31550/"
+
+  - type: "Op-ed"
+    languages: ["Korean"]
+    title: "The Historical Roots of China’s DeepSeek"
+    koreanTitle: "딥시크의 중국, 과학기술계 ‘졸부’가 아니다"
+    details:
+      - "Jongsik Christian Yi. Hankyoreh, April 18, 2025."
+    links:
+      - label: "View Online"
+        url: "https://www.hani.co.kr/arti/opinion/column/1193050.html"
+
+  - type: "Public Essay"
+    languages: ["Korean"]
+    title: "Mao Zedong’s Philosophy of Science and Its Impact"
+    koreanTitle: "마오의 과학관과 그 영향"
+    details:
+      - "Jongsik Christian Yi. EPI: The Science Magazine, Vol. 31, Spring 2025."
+    links:
+      - label: "View Online"
+        url: "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=360793228"
+
+  - type: "Interview"
+    languages: ["Korean"]
+    title: "Talking Animals with Jongsik Christian Yi"
+    details:
+      - "Interview with Chinese Animal Studies Network. February 25, 2025."
+    links:
+      - label: "View Online"
+        url: "https://chineseanimalstudiesnetwork.com/talking-animals-with-jongsik-christian-yi/"
+
+  - type: "Public Essay"
+    languages: ["Korean"]
+    title: "Of Scientists, by Scientists, and for Scientists: Pohang University of Science and Technology at 40"
+    koreanTitle: "제2의 건학에 즈음하여 되돌아본 우리대학의 역사"
+    details:
+      - "Jongsik Christian Yi. The Postech Times, June 12, 2024."
+    links:
+      - label: "View Online"
+        url: "http://times.postech.ac.kr/news/articleView.html?idxno=23207"
+
+  - type: "Public Essay"
+    languages: ["Korean"]
+    title: "A Way of Learning, A Way of Growing"
+    koreanTitle: "배움의 길, 성장의 길"
+    details:
+      - "Jongsik Christian Yi. Postechian, Vol. 181, April 2024."
+    links:
+      - label: "View Online"
+        url: "https://www.postech.ac.kr/kor/newscenter/postechian_list.do?mode=view&articleNo=10569&article.offset=48&articleLimit=12"
+
+  - type: "Public Essay"
+    languages: ["Korean"]
+    title: "Miracles and Flames: The Stories of Pohang Iron and Steel’s 135 Days of Recovery from Typhoon Hinnamnor"
+    koreanTitle: "함께 만든 기적, 꺼지지 않는 불꽃: 불가능을 가능케 한 포스코 재난극복 135일의 이야기"
+    details:
+      - "Sang Joon Park, Jongsik Christian Yi, et al. Nanam, 2023."
+    links:
+      - label: "View Online"
+        url: "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=313149790&start=slayer"
+
+  - type: "Public Essay"
+    languages: ["Korean"]
+    title: "The Difficulties of a New Instructor"
+    koreanTitle: "초보 교수자의 어려움"
+    details:
+      - "Jongsik Christian Yi. The Postech Times, November 13, 2022."
+    links:
+      - label: "View Online"
+        url: "http://times.postech.ac.kr/news/articleView.html?idxno=22314"
+
+  - type: "Public Essay"
+    languages: ["Korean"]
+    title: "When and How Did Pandemics End?"
+    koreanTitle: "팬데믹은 언제 어떻게 끝날까?"
+    details:
+      - "Jongsik Christian Yi. The Bulletin of National Museum of Korean Contemporary History, September 1, 2022."
+    links:
+      - label: "View Online"
+        url: "https://www.much.go.kr/webzine/vol42/sub/sub2.html"
+
+  - type: "Public Essay"
+    languages: ["Korean"]
+    title: "Arthdal Chronicles, Sorcery, Superstition, and Science"
+    koreanTitle: "‘아스달 연대기’와 마법, 미신, 그리고 과학"
+    details:
+      - "Jongsik Christian Yi. Behind Sciences, Vol. 8, March 2020."
+    links:
+      - label: "View Online"
+        url: "https://behindsciences.kaist.ac.kr/2020/03/20/%ec%99%80-%eb%a7%88%eb%b2%95-%eb%af%b8%ec%8b%a0-%ea%b7%b8%eb%a6%ac%ea%b3%a0-%ea%b3%bc%ed%95%99/"

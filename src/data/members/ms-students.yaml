@@ -1,0 +1,37 @@
+# MS Students on the Members page (/members/#ms-students).
+# Members appear in the order listed. See EDITING.md for how to add one.
+title: "MS Students"
+order: 2
+members:
+  - name: "Ruoxi “Rosy” Li"
+    email: "liruoxi@kaist.ac.kr"
+    program: "MS"
+    since: "Aug. 2025"
+    detail: "History of the Chinese electronics industry in the Reform era, AI governance and law"
+
+  - name: "Sonia Wang"
+    nativeName: "왕숙연"
+    email: "sw7732@kaist.ac.kr"
+    program: "MS"
+    since: "Aug. 2026"
+    detail: "STS and multiculturalism and diaspora studies"
+
+  - name: "Muhammad Sachio Ramiro"
+    email: "sachio.ramiro@kaist.ac.kr"
+    program: "MS"
+    since: "Aug. 2026"
+    detail: "STS and Indonesian Studies, Technocrats and research universities in Indonesia"
+
+  - name: "Jimyeong Kwon"
+    nativeName: "권지명"
+    email: "kjm120@kaist.ac.kr"
+    program: "MS"
+    since: "Aug. 2026"
+    detail: "STS, disability, and care"
+
+  - name: "Sehyun Choi"
+    nativeName: "최세현"
+    email: "sehyunchoi@kaist.ac.kr"
+    program: "MS"
+    since: "Aug. 2026"
+    detail: "STS, disability, minorities, and inequities"

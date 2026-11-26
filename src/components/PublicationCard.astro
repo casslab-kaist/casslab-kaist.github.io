@@ -1,36 +1,45 @@
 ---
 import { ExternalLink } from "@lucide/astro";
-import type { Publication } from "../data/publications";
+import type { Publication } from "../content.config";
 
 interface Props {
   publication: Publication;
 }
 
 const { publication } = Astro.props;
-const languageTone = publication.language.toLowerCase().includes("korean") ? "korean" : "english";
+const title = publication.koreanTitle ? `${publication.title} [${publication.koreanTitle}]` : publication.title;
+const languageTone = (language: string) => (language.toLowerCase().includes("korean") ? "korean" : "english");
 ---
 
 <article class="publication-card">
   <div class="publication-card__meta">
     <span class="type-tag">{publication.type}</span>
-    <span class:list={["language-badge", `language-badge--${languageTone}`]}>{publication.language}</span>
+    <span class="publication-card__languages">
+      {publication.languages.map((language) => (
+        <span class:list={["language-badge", `language-badge--${languageTone(language)}`]}>{language}</span>
+      ))}
+    </span>
   </div>
-  <h3>{publication.title}</h3>
+  <h3>{title}</h3>
   <div class="publication-card__details">
     {publication.details.map((detail) => <p>{detail}</p>)}
   </div>
   {
-    publication.linkLabel && (
-      <a
-        href={publication.url || "#"}
-        target={publication.url ? "_blank" : undefined}
-        rel={publication.url ? "noopener noreferrer" : undefined}
-        class="publication-action"
-        aria-label={`${publication.linkLabel}: ${publication.title}`}
-      >
-        {publication.linkLabel}
-        <ExternalLink aria-hidden="true" size={14} />
-      </a>
+    publication.links.length > 0 && (
+      <div class="publication-card__links">
+        {publication.links.map((link) => (
+          <a
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="publication-action"
+            aria-label={`${link.label}: ${title}`}
+          >
+            {link.label}
+            <ExternalLink aria-hidden="true" size={14} />
+          </a>
+        ))}
+      </div>
     )
   }
 </article>
