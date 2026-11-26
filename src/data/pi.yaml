@@ -223,13 +223,13 @@ awards:
 # Gallery photos. Put the image file in public/ and give its path from there.
 gallery:
   - image: "/pi-gallery-2.png"
-    alt: "Jongsik Christian Yi speaking at an event"
+    alt: "Jongsik Christian Yi at his desk"
 
   - image: "/pi-gallery-3.png"
-    alt: "Lecture slide and presentation scene"
+    alt: "Jongsik Christian Yi giving a talk next to a slide of a small white dog"
 
   - image: "/pi-gallery-1.png"
-    alt: "Jongsik Christian Yi portrait in front of a Harvard shield"
+    alt: "Jongsik Christian Yi in Harvard graduation robes, holding flowers, below a Harvard banner"
 
   - image: "/pi-gallery-4.png"
-    alt: "Jongsik Christian Yi standing in a library"
+    alt: "Jongsik Christian Yi standing in front of bookshelves"
