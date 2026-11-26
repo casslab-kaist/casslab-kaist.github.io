@@ -1,8 +1,11 @@
 ---
+import { getEntry } from "astro:content";
 import { GraduationCap, Landmark, PawPrint, Scale, ShieldCheck } from "@lucide/astro";
 import Hero from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
-import { assets, assetSources, currentProjects, researchThemes } from "../data/site";
+import { assets, assetSources, researchThemes } from "../data/site";
+
+const { projects } = (await getEntry("projects", "projects"))!.data;
 
 const themeIcons = [Scale, GraduationCap, PawPrint, Landmark, ShieldCheck];
 ---
@@ -44,7 +47,7 @@ const themeIcons = [Scale, GraduationCap, PawPrint, Landmark, ShieldCheck];
           <p class="small-label">Active Grants</p>
         </div>
         <div class="project-list">
-          {currentProjects.map((project) => (
+          {projects.map((project) => (
             <article class="project-card project-card--summary">
               <div class="project-card__body">
                 <h3>{project.title}</h3>

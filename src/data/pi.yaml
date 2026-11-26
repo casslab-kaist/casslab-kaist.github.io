@@ -1,0 +1,235 @@
+# Everything on the PI page (/pi/), plus the PI summary on the home page.
+# See EDITING.md for how to edit each part.
+
+name: "Jongsik Christian Yi"
+title: "Principal Investigator, CASS Lab"
+appointment: "Assistant Professor, KAIST Graduate School of Science and Technology Policy"
+portrait: "/JongsikChristianYi-portrait.jpeg"
+homePortrait: "/pi-portrait.png"
+
+# Short summary shown on the home page. One list item per paragraph.
+homeIntro:
+  - "Jongsik Christian Yi is an Assistant Professor in the Graduate School of Science and Technology Policy at KAIST, specializing in the history of science and medicine, science and technology studies of China and Vietnam, and animal and environmental studies. His research draws on perspectives from history, STS, policy studies, and multispecies scholarship to examine how science and technology have shaped societies, environments, and life across Asia."
+
+# Biography at the top of the PI page. One list item per paragraph.
+bio:
+  - "Dr. Jongsik Christian Yi is an Assistant Professor in the Graduate School of Science and Technology Policy at KAIST. His research and teaching focus on the history and policy of science and technology in modern China, while also encompassing the history of science, science and technology studies (STS), and science and technology policy in East Asia (Korea and Japan) and Southeast Asia (Vietnam). His broader interests also include medical humanities, human–animal relations, and global higher education policy."
+
+# "Publications & Academic Service" section. One list item per paragraph.
+# Wrap book and journal titles in <em>...</em> to show them in italics.
+longBio:
+  - "He is the author of <em>More-Than People's Communes: Veterinary Workers and Nonhuman Animals in Mao-Era China</em> (under contract with the University of Chicago Press) and <em>Animal History: The Birth of the Modern People Who Love and Hate Animals</em> (in Korean, East Asia Books). He has also translated into Korean Victor Seow's <em>Carbon Technocracy</em>, Warwick Anderson's <em>Spectacles of Waste</em>, Sigrid Schmalzer's <em>Red Revolution, Green Revolution</em>, and Loren Graham's <em>Lysenko's Ghost</em>, among others."
+  - "His scholarly articles have appeared in leading international journals, including <em>The Journal of Asian Studies</em>, <em>The Bulletin of the History of Medicine</em>, <em>Historical Studies in the Natural Sciences</em>, and <em>The Journal of the History of Biology</em>. Professor Yi is currently an associate editor of <em>East Asian Science, Technology, and Medicine</em> and <em>The Korean Journal for the History of Science</em>. He also serves on the boards of the Korea Foundation for Women In Science, Engineering and Technology (WISET); the Korean History of Science Society; and the Korean Association for Cold War Studies."
+
+# Buttons under the biography. icon is one of: building, graduation-cap, id-card.
+links:
+  - label: "KAIST Profile"
+    icon: "building"
+    url: "https://stp.kaist.ac.kr/FacultyFull_time_Professor/view/id/120"
+
+  - label: "Harvard Profile"
+    icon: "graduation-cap"
+    url: "https://histsci.fas.harvard.edu/people/jongsik-christian-yi"
+
+  - label: "ORCID"
+    icon: "id-card"
+    url: "https://orcid.org/0000-0001-5660-1065"
+
+emails:
+  - "jongsikyi@kaist.ac.kr"
+  - "dangs0713@gmail.com"
+
+# Academic Appointments. The first one is marked as current.
+appointments:
+  - date: "Sept 2025 - Present"
+    title: "Assistant Professor"
+    detail: "Graduate School of Science and Technology Policy, Korea Advanced Institute of Science and Technology (KAIST)"
+
+  - date: "Aug 2022 - Aug 2025"
+    title: "Assistant Professor of the History of Science"
+    detail: "Division of the Humanities and Social Sciences, Pohang University of Science and Technology (POSTECH)"
+
+  - date: "Mar 2023 - Aug 2025"
+    title: "Assistant Professor of Social Data Science"
+    detail: "Graduate School of Convergence Science and Technology, Pohang University of Science and Technology (POSTECH)"
+
+  - date: "Mar 2023 - Aug 2025"
+    title: "Adjunct Professor"
+    detail: "Institute of Convergence Science and Technology, Yonsei University"
+
+education:
+  - date: "2017 - 2022"
+    title: "Ph.D. in History of Science"
+    detail: "Harvard University"
+
+  - date: "2013 - 2016"
+    title: "M.A. in History"
+    detail: "Korea University"
+
+  - date: "2007 - 2013"
+    title: "B.A. in History"
+    detail: "Korea University"
+
+# Teaching, grouped by institution. Each course lists the terms it was taught.
+# evaluation and award are optional.
+teaching:
+  - institution: "KAIST"
+    courses:
+      - title: "Chinese Science and Technology"
+        offerings:
+          - term: "Fall 2026"
+            role: "Instructor"
+      - title: "Survey in Science and Technology Studies"
+        offerings:
+          - term: "Spring 2026"
+            role: "Instructor"
+            evaluation: "5.0/5.0"
+      - title: "Science, Technology, and Asia"
+        offerings:
+          - term: "Fall 2025"
+            role: "Instructor"
+
+  - institution: "POSTECH"
+    courses:
+      - title: "History of Science"
+        koreanTitle: "과학사"
+        offerings:
+          - term: "Spring 2025"
+            role: "Instructor"
+            evaluation: "4.99/5.0"
+          - term: "Spring 2024"
+            role: "Instructor"
+            evaluation: "5.0/5.0"
+          - term: "Spring 2023"
+            role: "Instructor"
+            evaluation: "4.98/5.0"
+      - title: "Modern Society and Science: Historical Perspectives on Science and Technology Policy"
+        offerings:
+          - term: "Spring 2025"
+            role: "Instructor"
+      - title: "History of Science and Technology in Modern Korea"
+        koreanTitle: "한국과학기술사"
+        offerings:
+          - term: "Fall 2024"
+            role: "Co-Instructor with Prof. Hyungsub Choi"
+            evaluation: "4.86/5.0"
+          - term: "Fall 2023"
+            role: "Co-Instructor with Prof. Hyungsub Choi"
+            evaluation: "4.94/5.0"
+          - term: "Fall 2022"
+            role: "Instructor"
+            evaluation: "4.9/5.0"
+      - title: "History of Modern Korea"
+        koreanTitle: "한국근현대사의 이해"
+        offerings:
+          - term: "Fall 2024"
+            role: "Instructor"
+            evaluation: "5.0/5.0"
+          - term: "Fall 2023"
+            role: "Instructor"
+            evaluation: "5.0/5.0"
+          - term: "Fall 2022"
+            role: "Instructor"
+            evaluation: "4.96/5.0"
+      - title: "Humanities of Physics"
+        koreanTitle: "물리(物理)의 문리(文理)"
+        offerings:
+          - term: "Spring 2024"
+            role: "Co-Instructor with Prof. Chunsik Yun"
+      - title: "Crossing Boundaries of Science and Society"
+        koreanTitle: "과학과 사회의 통합적 이해"
+        offerings:
+          - term: "Spring 2023"
+            role: "Co-Instructor with Prof. Jinhee Kim and Jihyun Suh."
+
+  - institution: "Harvard University"
+    courses:
+      - title: "Modern Southeast Asia"
+        offerings:
+          - term: "Spring 2022"
+            role: "Teaching Fellow for Prof. Sugata Bose."
+            award: "Distinction in Teaching Award given by the Harvard Derek Bok Center for Teaching and Learning"
+      - title: "Medicine and Health in America"
+        offerings:
+          - term: "Spring 2020"
+            role: "Teaching Fellow for Prof. Eram Alam."
+      - title: "Engineering East Asia: Technology, Society, and the State"
+        offerings:
+          - term: "Fall 2019"
+            role: "Teaching Fellow for Prof. Victor Seow."
+            award: "Distinction in Teaching Award given by the Harvard Derek Bok Center for Teaching and Learning"
+
+  - institution: "Korea University"
+    courses:
+      - title: "Topics in Chinese History: Modern China, 1840-1949"
+        offerings:
+          - term: "Spring 2016"
+            role: "Translating Assistant for Xu Jin (徐進, Shandong University)."
+      - title: "Topics in Chinese History: The History of the People's Republic of China"
+        offerings:
+          - term: "Spring 2014"
+            role: "Translating Assistant for Dong Guoqiang (董國强, Fudan University)."
+
+# Awards, Fellowships, and Grants (Selected).
+awards:
+  - title: "Annual Essay Prize"
+    organization: "The Korean History of Science Society (KHSS)"
+    year: "2025"
+
+  - title: "Start-up Research Grant"
+    organization: "KAIST"
+    year: "2025-2028"
+
+  - title: "N.EX.T Idea Project"
+    organization: "POSCO Holdings N.EX.T Hub"
+    year: "2023-2024"
+
+  - title: "F. Hilary Conray Award"
+    organization: "Association for Asian Studies (AAS)"
+    year: "2023"
+
+  - title: "Bernadotte E. Schmitt Grant"
+    organization: "American Historical Association"
+    year: "2022"
+
+  - title: "Mellon/ACLS Dissertation Completion Fellowship"
+    organization: "The Andrew W. Mellon Foundation and the American Council of Learned Societies (ACLS)"
+    year: "2022-2023 (declined)"
+
+  - title: "Dissertation Fellowship"
+    organization: "The D. Kim Foundation for the History of Science and Technology in East Asia"
+    year: "2022-2023 (declined)"
+
+  - title: "Desmond and Whitney Shum Fellowship"
+    organization: "The Fairbank Center for Chinese Studies, Harvard University"
+    year: "2020-2021"
+
+  - title: "The Predissertation Travel Grant to China"
+    organization: "Henry Luce Foundation/ACLS Program in China Studies"
+    year: "2020"
+
+  - title: "Erwin Hiebert Fellowship"
+    organization: "Department of the History of Science, Harvard University"
+    year: "2017-2021"
+
+  - title: "Esherick-Ye Family Foundation Grant in Modern Chinese History"
+    organization: "The Esherick-Ye Family Foundation"
+    year: "2017-2018"
+
+  - title: "Fulbright Foreign Student Program"
+    organization: "Institute of International Education (IIE) and Fulbright Korean-American Educational Commission"
+    year: "2016-2017"
+
+# Gallery photos. Put the image file in public/ and give its path from there.
+gallery:
+  - image: "/pi-gallery-2.png"
+    alt: "Jongsik Christian Yi speaking at an event"
+
+  - image: "/pi-gallery-3.png"
+    alt: "Lecture slide and presentation scene"
+
+  - image: "/pi-gallery-1.png"
+    alt: "Jongsik Christian Yi portrait in front of a Harvard shield"
+
+  - image: "/pi-gallery-4.png"
+    alt: "Jongsik Christian Yi standing in a library"

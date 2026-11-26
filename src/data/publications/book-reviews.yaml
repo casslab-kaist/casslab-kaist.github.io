@@ -1,0 +1,82 @@
+# Book Reviews on the Publications page (/publications/#book-reviews).
+# Entries appear in the order listed. See EDITING.md for how to add one.
+title: "Book Reviews"
+order: 5
+items:
+  - type: "Review"
+    languages: ["Korean"]
+    title: "Review of Lonely Ideas: Can Russia Compete?"
+    details:
+      - "Original Work: Loren Graham. Korean trans. Dong-hyuk Kim and Seung-cheol Heo, GIST Press, 2025."
+      - "Reviewed in: Science, Technology, and Society, Vol. 10 (June 2026): 344-352."
+    # TODO: add the link. The old site showed a "View Publisher Site" button here, but it had no address.
+
+  - type: "Review"
+    languages: ["English"]
+    title: "Review of Human-Animal Relations and the Hunt in Korea and Northeast Asia"
+    details:
+      - "Original Work: George L. Kallander. Edinburgh University Press, 2023."
+      - "Reviewed in: Animal History, Vol. 1, No. 2 (June 2025): 87-89."
+    links:
+      - label: "View Publisher Site"
+        url: "https://doi.org/10.1525/ah.2024.2454435"
+
+  - type: "Review"
+    languages: ["English"]
+    title: "Review of Technoscience of Tak and Artisans: Resourceful Evolution of Chosŏn Papermaking"
+    details:
+      - "Original Work: Jung Lee. Purunyoksa Publishing Co., 2023."
+      - "Reviewed in: The Korean Journal for the History of Science, Vol. 45, No. 2 (August 2023): 413-417."
+    links:
+      - label: "View Publisher Site"
+        url: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002993574"
+
+  - type: "Review"
+    languages: ["Korean"]
+    title: "Review of Histoire du traitement de la mélancolie [History of the Treatment of Melancholy]"
+    details:
+      - "Original Work: Jean Starobinski. Korean trans. Younguk Kim. ITTA, 2023."
+      - "Reviewed in: Korean Science, Technology, and Society Network ed., Science, Technology, and Society, Vol. 4, Goyang: Aleph Books, 2023."
+    links:
+      - label: "View Publisher Site"
+        url: "https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11492532"
+
+  - type: "Review"
+    languages: ["Korean"]
+    title: "Review of A Cultural History of Heredity"
+    details:
+      - "Original Work: Hans-Jörg Rheinberger and Staffan Müller-Wille. Korean trans. Jaehwan Hyun, Pusan National University Press, 2022"
+      - "Reviewed in: The Korean Journal of Medical History, Vol. 32, No. 1 (April 2023): 423-433."
+    links:
+      - label: "View Publisher Site"
+        url: "https://www.medhist.or.kr/journal/view.php?number=2443"
+
+  - type: "Review"
+    languages: ["English"]
+    title: "Review of Knowledge Production in Mao-Era China: Learning from the Masses"
+    details:
+      - "Original Work: Rui Kunze and Marc Andre Matten. Lexington Books, 2021."
+      - "Reviewed in: East Asian Science, Technology and Society: An International Journal, Vol. 16, No. 3 (August 2022): 445-447."
+    links:
+      - label: "View Publisher Site"
+        url: "https://www.tandfonline.com/doi/full/10.1080/18752160.2022.2096816"
+
+  - type: "Review"
+    languages: ["Korean"]
+    title: "Review of Carbon Technocracy: Energy Regimes in Modern East Asia"
+    details:
+      - "Original Work: Victor Seow. University of Chicago Press, 2022."
+      - "Reviewed in: The Korean Journal for the History of Science, Vol. 44, No. 1 (April 2022): 213-220."
+    links:
+      - label: "View Publisher Site"
+        url: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?fbclid=IwAR0tofwnzAp-XBdNslSO93_s46G-aYJlcy1YaTrFV37NwpGCNE-PyvIs9AM&sereArticleSearchBean.artiId=ART002836301"
+
+  - type: "Review"
+    languages: ["English"]
+    title: "Review of Mao's Bestiary: Medicinal Animals and Modern China"
+    details:
+      - "Original Work: Liz P. Y. Chee, Duke University Press, 2021."
+      - "Reviewed in: History: The Journal of the Historical Association, Vol. 106, No. 373 (December 2021): 871-872."
+    links:
+      - label: "View Publisher Site"
+        url: "https://doi.org/10.1111/1468-229X.13231"

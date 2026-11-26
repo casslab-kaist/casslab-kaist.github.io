@@ -1,0 +1,46 @@
+# Books on the Publications page (/publications/#books).
+# Entries appear in the order listed. See EDITING.md for how to add one.
+title: "Books"
+order: 1
+items:
+  - type: "Book"
+    languages: ["English"]
+    title: "More-Than People’s Communes: Veterinary Workers and Nonhuman Animals in Mao-Era China"
+    details:
+      - "Jongsik Christian Yi. Under contract with the University of Chicago Press, 2022."
+    # TODO: add a link to the publisher's page once there is one.
+
+  - type: "Book"
+    languages: ["Korean"]
+    title: "Chinese Science and Technology in the Long Twentieth Century"
+    details:
+      - "Jongsik Christian Yi (work in progress)"
+
+  - type: "Book"
+    languages: ["Korean"]
+    title: "Seeing and Thinking Like a Historian"
+    details:
+      - "Jongsik Christian Yi (work in progress)"
+
+  - type: "Book"
+    languages: ["Korean"]
+    title: "What Science Leaves Behind, What It Erases"
+    details:
+      - "Jongsik Christian Yi. Under contract with Miraebook"
+
+  - type: "Book"
+    languages: ["Korean"]
+    title: "History 101 for STEM Majors"
+    koreanTitle: "공대생을 위한 역사학 강의"
+    details:
+      - "Jongsik Christian Yi. Nermer Books, forthcoming."
+
+  - type: "Book"
+    languages: ["Korean"]
+    title: "Animal History: The Birth of the Modern People who Love and Hate Animals"
+    koreanTitle: "벌거벗은 동물사: 동물을 사랑하고 혐오하는 현대인의 탄생"
+    details:
+      - "Jongsik Christian Yi. East Asia Books, 2024."
+    links:
+      - label: "View Publisher Site"
+        url: "https://product.kyobobook.co.kr/detail/S000213544819"
