@@ -2,8 +2,6 @@
 import { Building2, GraduationCap, IdCard, Mail } from "@lucide/astro";
 import CourseCard from "../components/CourseCard.astro";
 import TimelineList from "../components/TimelineList.astro";
-import SiteFooter from "../components/SiteFooter.astro";
-import SiteHeader from "../components/SiteHeader.astro";
 import Layout from "../layouts/Layout.astro";
 import {
   appointments,
@@ -28,7 +26,6 @@ const contactEmails = [
 ---
 
 <Layout title="Jongsik Christian Yi | CASS Lab" description="Principal Investigator profile for CASS Lab at KAIST STP.">
-  <SiteHeader activePath="/pi/" />
   <main id="content">
     <section class="profile-hero" aria-labelledby="pi-title">
       <figure class="profile-hero__portrait">
@@ -45,20 +42,15 @@ const contactEmails = [
           {profileLinks.map((link) => {
             const Icon = link.icon;
             return (
-              <a
-                href={link.url || "#"} 
-                target={link.url ? "_blank" : undefined}
-                rel={link.url ? "noopener noreferrer" : undefined}
-                class="profile-link"
-              >
-                <Icon aria-hidden="true" size={16} strokeWidth={1.8} />
+              <a href={link.url} target="_blank" rel="noopener noreferrer" class="profile-link">
+                <Icon aria-hidden="true" size={16} />
                 <span>{link.label}</span>
               </a>
             );
           })}
         </div>
         <div class="profile-contact" aria-label="Contact emails">
-          <Mail aria-hidden="true" size={16} strokeWidth={1.8} />
+          <Mail aria-hidden="true" size={16} />
           {contactEmails.map((email, index) => (
             <>
               <a href={`mailto:${email}`} class="profile-email">{email}</a>
@@ -115,21 +107,24 @@ const contactEmails = [
     </section>
 
     <section class="page-section page-section--warm" aria-labelledby="interests-heading">
-      <div class="section-shell pi-teaching-section">
+      <div class="section-shell">
         <div class="section-heading">
           <h2 id="interests-heading">Teaching</h2>
         </div>
-        <div class="teaching-records teaching-records--pi">
-          {teachingRecords.map((group) => (
-            <section class="course-group" aria-labelledby={`${group.institution.toLowerCase().replaceAll(" ", "-")}-pi-heading`}>
-              <div class="course-group__heading">
-                <h3 id={`${group.institution.toLowerCase().replaceAll(" ", "-")}-pi-heading`}>{group.institution}</h3>
-              </div>
-              <div class="course-list">
-                {group.courses.map((course) => <CourseCard title={course.title} offerings={course.offerings} />)}
-              </div>
-            </section>
-          ))}
+        <div class="teaching-records">
+          {teachingRecords.map((group) => {
+            const headingId = `${group.institution.toLowerCase().replaceAll(" ", "-")}-pi-heading`;
+            return (
+              <section class="course-group" aria-labelledby={headingId}>
+                <div class="course-group__heading">
+                  <h3 id={headingId}>{group.institution}</h3>
+                </div>
+                <div class="course-list">
+                  {group.courses.map((course) => <CourseCard title={course.title} offerings={course.offerings} />)}
+                </div>
+              </section>
+            );
+          })}
         </div>
       </div>
     </section>
@@ -168,5 +163,4 @@ const contactEmails = [
       </div>
     </section>
   </main>
-  <SiteFooter />
 </Layout>

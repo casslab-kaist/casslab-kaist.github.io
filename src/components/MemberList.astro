@@ -34,7 +34,7 @@ const nativeLang = (text: string) => (/[가-힣]/.test(text) ? "ko" : undefined)
               </h3>
               {member.email && (
                 <p class="member-row__email">
-                  <Mail aria-hidden="true" size={14} strokeWidth={1.9} />
+                  <Mail aria-hidden="true" size={14} />
                   <span>{formatEmail(member.email)}</span>
                 </p>
               )}

@@ -21,15 +21,15 @@ const languageTone = publication.language.toLowerCase().includes("korean") ? "ko
   </div>
   {
     publication.linkLabel && (
-      <a 
-        href={publication.url || "#"} 
+      <a
+        href={publication.url || "#"}
         target={publication.url ? "_blank" : undefined}
         rel={publication.url ? "noopener noreferrer" : undefined}
-        class="publication-action" 
+        class="publication-action"
         aria-label={`${publication.linkLabel}: ${publication.title}`}
       >
         {publication.linkLabel}
-        <ExternalLink aria-hidden="true" size={14} strokeWidth={1.8} />
+        <ExternalLink aria-hidden="true" size={14} />
       </a>
     )
   }

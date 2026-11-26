@@ -1,15 +1,14 @@
 ---
+import SiteFooter from "../components/SiteFooter.astro";
+import SiteHeader from "../components/SiteHeader.astro";
 import "../styles/global.css";
 
 interface Props {
-  title?: string;
-  description?: string;
+  title: string;
+  description: string;
 }
 
-const {
-  title = "CASS Lab | KAIST",
-  description = "Chinese and Asian Science Studies Lab at KAIST STP.",
-} = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
@@ -34,6 +33,8 @@ const {
   </head>
   <body id="top">
     <a class="skip-link" href="#content">Skip to content</a>
+    <SiteHeader />
     <slot />
+    <SiteFooter />
   </body>
 </html>

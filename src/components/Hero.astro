@@ -2,11 +2,10 @@
 interface Props {
   title: string;
   image: string;
-  eyebrow?: string;
-  imageSource?: string; // Kept!
+  imageSource?: string;
 }
 
-const { title, image, eyebrow, imageSource } = Astro.props;
+const { title, image, imageSource } = Astro.props;
 ---
 
 <section class="hero" aria-labelledby="page-title">
@@ -17,34 +16,27 @@ const { title, image, eyebrow, imageSource } = Astro.props;
     </span>
   )}
   <div class="hero__inner">
-    {eyebrow && <p class="hero__eyebrow">{eyebrow}</p>}
     <h1 id="page-title">{title}</h1>
   </div>
 </section>
 
 <script>
-  function initHeroParallax() {
-    const heroes = document.querySelectorAll('.hero');
-    
-    heroes.forEach((hero) => {
-      const img = hero.querySelector('.hero__image') as HTMLElement;
-      if (!img) return;
+  // Parallax: the background image moves at a fraction of the scroll speed.
+  // Lower SPEED means a slower-moving image.
+  const SPEED = 0.35;
+  const hero = document.querySelector<HTMLElement>(".hero");
+  const image = hero?.querySelector<HTMLElement>(".hero__image");
 
-      window.addEventListener('scroll', () => {
+  if (hero && image) {
+    window.addEventListener(
+      "scroll",
+      () => {
         const rect = hero.getBoundingClientRect();
-        
         if (rect.top < window.innerHeight && rect.bottom > 0) {
-          // Change 0.35 to adjust speed (lower = slower moving image / deeper depth)
-          const speed = 0.35; 
-          const yPos = -rect.top * speed;
-          
-          img.style.transform = `translate3d(0, ${yPos}px, 0)`;
+          image.style.transform = `translate3d(0, ${-rect.top * SPEED}px, 0)`;
         }
-      }, { passive: true });
-    });
+      },
+      { passive: true },
+    );
   }
-
-  initHeroParallax();
-  
-  document.addEventListener('astro:after-swap', initHeroParallax);
 </script>

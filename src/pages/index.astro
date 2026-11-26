@@ -1,6 +1,4 @@
 ---
-import SiteFooter from "../components/SiteFooter.astro";
-import SiteHeader from "../components/SiteHeader.astro";
 import Layout from "../layouts/Layout.astro";
 import { assets, labIntro, piProfile } from "../data/site";
 ---
@@ -9,7 +7,6 @@ import { assets, labIntro, piProfile } from "../data/site";
   title="CASS Lab | KAIST"
   description="Chinese and Asian Science Studies Lab at KAIST STP studies science, technology, medicine, animals, and environments through the histories and societies of Asia."
 >
-  <SiteHeader activePath="/" />
   <main id="content">
     <section class="home-hero" aria-labelledby="home-title">
       <div class="home-hero__copy">
@@ -21,7 +18,7 @@ import { assets, labIntro, piProfile } from "../data/site";
       </figure>
     </section>
 
-    <section class="page-section home-about-section" aria-labelledby="about-home-heading">
+    <section class="page-section" aria-labelledby="about-home-heading">
       <div class="section-shell split-section">
         <div>
           <p class="section-kicker">About</p>
@@ -49,5 +46,4 @@ import { assets, labIntro, piProfile } from "../data/site";
       </div>
     </section>
   </main>
-  <SiteFooter />
 </Layout>
